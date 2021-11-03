@@ -1,0 +1,34 @@
+ADD 101A == ADD 101
+AfO 20 83f == AfO 20 83
+CT 53 118 == ABL 1217
+Assur 2/411 2 617 == Assur 2/4 11
+Bagh. Mitt. 5 1970 275 no. 3 == BaM5 275
+NWL 3 == CTN 3 145
+Kalhu Prism D == Clh Prism D
+Fales 1986 no. 13 == Hug NinU2
+Grayson 1981 126 == Grayson 1981 no. 84
+Grayson 1981 126f == Grayson 1981 no. 84
+IM 96737 == Hug AssU8
+Iraq 14 23 == Hunger 1968 314
+Assur 11634m == As11634m
+LKA 100 Hunger 1968 214B == Hunger 1968 214B
+THU1 == Hug THU1
+THU 5 == Hug THU5
+81-2-4 == Hug NinU2
+AO 25341 == Hug RechtsU
+CT 26 Pl. 37 == CT 26 13
+CT 26 pl.38 == CT 26 13
+Gzt 45-1-75 == Gaz45-1-75
+NDD 5459 == ND 5459
+Iraq 27 16 == Iraq 27 16a
+As11634m2 == As11634m
+MDOG 132 102f == MAss 20
+Samaria 1825 == NABU 1995/100
+Sg D+E 450 == Cyl. D+E
+ZA 73 10 == AfO 32 38
+VTE == SAA 2 6
+KB II 38 == KB 2 38
+
+
+
+

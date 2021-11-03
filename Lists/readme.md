@@ -13,7 +13,7 @@ oraccConcordances
 * oracc name and number ; designation ; accession_no ; museum_no ; popular_name ; publication_history
 * E.g. saao/saa12/P235242;SAA 12 69;NARGD 42;_;VAT 9824;_;SAA 12 69
 * = use the designation (SAA 12 69) instead of the other ones
-* 
+
 MAss_Radner_conversion.csv
 * List compiled by us to find the concordances between MAss documents and Radner forthcoming 
 * (used for the pdf-document)
@@ -59,10 +59,10 @@ professionCategory
 * E.g. +Military personnel
 * 1 Leader of a group of archers from Nineveh
 * If the profession/description of an individual is the second line, use the first line as short profession/description
-* 
+
 timeperiods
 * List of dating attributes that correspond to shorter dating with years
 * E.g. +668-600 Assurbanipal and/or later
 * 1 7th century probably reign of Assurbanipal or later
 * If the dating of an individual is the second line, use the first line as date
-* 
+

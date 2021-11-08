@@ -1,4 +1,6 @@
-### Find document names from text files received from Simo Parpola (see textfileExample for a small extract from one)
+### Find document names from text files received from Simo Parpola 
+
+(see textfileExample.txt for a small extract from one)
 
 Document names are on their own lines that start with '@@'
 * Ignore document names that are on the "Do not collect list"

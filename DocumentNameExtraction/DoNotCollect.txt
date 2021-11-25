@@ -11,31 +11,31 @@ if (line.startsWith("@@AnSt") ||
             line.startsWith("@@Fuchs") ||
             line.matches(".*Luckenbill \\(?1924\\)?.*") ||
             line.startsWith("@@Luckenbill 30") ||
-            line.matches(".*Frahm \\(?1997\\)?.'") ||
+            line.matches(".*Frahm \\(?1997\\)?.*") ||
             line.matches("@@Borger \\(19[59]6\\) .*") ||
             line.startsWith("@@IIT") ||
             line.startsWith("@@RIM") ||
             line.matches("@@2 ?R .*") ||
-                line.startsWith("@@ADD App") ||
-                line.startsWith("@@Cyl. D+E") ||
-                line.startsWith("@@Sg D+E") ||
-                line.startsWith("@@KAH") ||
-                line.startsWith("@@Tadmor") ||
-                line.matches(".*Grayson \\(?1975\\)?.*") ||
-                line.matches(".*Iraq 16 179.*") ||
-                line.matches(".*Iraq 16 18[23].*") ||
-                line.startsWith("@@Iraq 41 56") ||
-                line.matches("@@AfO [34] .*") ||
-                line.matches("@@A 0?117 .*") ||
-                line.startsWith("@@As14616c") ||
-                line.startsWith("@@Istanbul A") ||
-                line.matches("@@KAV 0?1[012][: ].*") ||
-                line.matches("@@KAV 0?21[: ].*") ||
-                line.matches("@@KAV 9[: ].*") ||
-                line.matches("@@CT [23]6 .*") ||
-                line.startsWith("@@K 6109 ") ||
-                line.startsWith("@@K 2411 ") ||
-                line.startsWith("@@Sg D+E") ||
-                line.startsWith("@@Bab. Chron.") ||
-                line.startsWith("@@Najafehabad") ||
-                line.startsWith("@@Levine")
+            line.startsWith("@@ADD App") ||
+            line.startsWith("@@Cyl. D+E") ||
+            line.startsWith("@@Sg D+E") ||
+            line.startsWith("@@KAH") ||
+            line.startsWith("@@Tadmor") ||
+            line.matches(".*Grayson \\(?1975\\)?.*") ||
+            line.matches(".*Iraq 16 179.*") ||
+            line.matches(".*Iraq 16 18[23].*") ||
+            line.startsWith("@@Iraq 41 56") ||
+            line.matches("@@AfO [34] .*") ||
+            line.matches("@@A 0?117 .*") ||
+            line.startsWith("@@As14616c") ||
+            line.startsWith("@@Istanbul A") ||
+            line.matches("@@KAV 0?1[012][: ].*") ||
+            line.matches("@@KAV 0?21[: ].*") ||
+            line.matches("@@KAV 9[: ].*") ||
+            line.matches("@@CT [23]6 .*") ||
+            line.startsWith("@@K 6109 ") ||
+            line.startsWith("@@K 2411 ") ||
+            line.startsWith("@@Sg D+E") ||
+            line.startsWith("@@Bab. Chron.") ||
+            line.startsWith("@@Najafehabad") ||
+            line.startsWith("@@Levine")

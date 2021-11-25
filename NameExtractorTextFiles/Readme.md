@@ -1,18 +1,18 @@
 ### Find names of individuals in the text files
 
 The format of the text files is:
-    * *Name
-    * (translation of name); language of name; gender
-    * information on the name (can span several lines)
-    *
-    * Profession (time period when lived)   [Line starts with a number if several individuals with the same name, otherwise not]
-    * information on the individual     [can span over several lines]
-    * @@Document name line (year)
-    * more information
-    * @@Document name line (year)
-    *      [This can go on for several paragraphs and be divided into numbered list with might be divided into list marked with letters etc. a. bla bla 1' bla bla a' bla bla]
-    *
-    * <<Name of scholar who added to database
+* *Name
+* (translation of name); language of name; gender
+* information on the name (can span several lines)
+*
+* Profession (time period when lived)   [Line starts with a number if several individuals with the same name, otherwise not]
+* information on the individual     [can span over several lines]
+* @@Document name line (year)
+* more information
+* @@Document name line (year)
+*      [This can go on for several paragraphs and be divided into numbered list with might be divided into list marked with letters etc. a. bla bla 1' bla bla a' bla bla]
+*
+* <<Name of scholar who added to database
 
 1. Iterate thought the text files
 * Get name from line starting with '*'

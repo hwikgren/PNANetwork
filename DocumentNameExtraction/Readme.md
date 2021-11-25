@@ -7,7 +7,7 @@ Document names are on their own lines that start with '@@'
 * Ignore document names that are on the "Do not collect list"
 	* This is done in the code, but the list can be seen in DoNoCollect.txt file
 * @@-names inside parenthesis are also ignored
-*If line contains '=', i.e. there are duplicate names for the document
+* If line contains '=', i.e. there are duplicate names for the document
 	* we select the first one but save the information on the duplicate name as well
 	* but if the line contains the name Hunger or Borger (1996), we prefer those names
 	* the duplicates that are on the same line are cleaned and saved in a treemap called onlineDuplicates
@@ -52,8 +52,8 @@ The script uses lists in *../Lists/*. (the script should be started from the fol
   * ../Lists/oraccConcordances
 
 The script assumes a folder called Output and writes to it:
-	* *textsWithOriginals*: document name and the original line
-	* *docsInTextfiles*: list of the normalised names of all found documents
+* *textsWithOriginals*: document name and the original line
+* *docsInTextfiles*: list of the normalised names of all found documents
 
 There is also options to write the following lists to Output:
 * *thumbprints*: list of the document names changed to thumbprints

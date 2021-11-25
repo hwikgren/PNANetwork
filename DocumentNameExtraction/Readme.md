@@ -37,19 +37,21 @@ Document names are on their own lines that start with '@@'
 		* shorten the name to match the length of the thumbprint found
 	* check again for synonymous names
 
-4. Save found document name with the original line it was found in into a binary file (used in extracting the names of individuals from the same documents)
+4. Save found document name with the original line it was found in into a binary file texts.ser 
+	* the binary file used in extracting the names of individuals from the same documents
 	* Print the document name and the original line to *textsWithOriginals*
 	* Print a list of document names to *docsInTextfiles*
 
 Further details can be seen in the commented code in src/PNATextExtractor.java
 
-The script uses lists in *../Lists/*. (the script should be started from the folder where Lists-folder is)
+The script uses lists in Lists folder, i.e. ../Lists/ (the script should be started from the folder where Lists-folder is)
   * ../Lists/concordances
     * List compiled by us to find texts that have different names but are really the same document
-    * Especially Assxxxxx, StAT, and BATSH documents
+    * Especially Asxxxxx, StAT, and BATSH documents
   * ../Lists/sameText.txt
     * Our first list of documents that are in fact the same although they have different names
   * ../Lists/oraccConcordances
+  	* a concordance list of document names extracted from Oracc metadata (catalogue.json) 
 
 The script assumes a folder called Output and writes to it:
 * *textsWithOriginals*: document name and the original line

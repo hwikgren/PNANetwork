@@ -44,7 +44,7 @@ Document names are on their own lines that start with '@@'
 
 Further details can be seen in the commented code in src/PNATextExtractor.java
 
-The script uses lists in Lists folder, i.e. ../Lists/ (the script should be started from the folder where Lists-folder is)
+The script uses lists in Lists folder, i.e. _../Lists/_ (the script should be started from the folder where Lists-folder is)
   * ../Lists/concordances
     * List compiled by us to find texts that have different names but are really the same document
     * Especially Asxxxxx, StAT, and BATSH documents
@@ -57,7 +57,7 @@ The script assumes a folder called Output and writes to it:
 * *textsWithOriginals*: document name and the original line
 * *docsInTextfiles*: list of the normalised names of all found documents
 
-There is also options to write the following lists to Output:
+There is also options to write the following lists to Output (the files can be found in _../Output_):
 * *thumbprints*: list of the document names changed to thumbprints
 * *usedDuplicates*: list of all document names found in the text files with normalised names for each
 * *allDuplicates*: list of all possible duplicates from our lists and found in PNA (from oraccConcordances only SAA)

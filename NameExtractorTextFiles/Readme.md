@@ -21,6 +21,7 @@ more information
 
 <<Name of scholar who added to database
 ```
+**The procedure of finding individuals from text files**
 
 1. Iterate thought the text files
 * Get name from line starting with '*'
@@ -44,11 +45,13 @@ more information
 		* get the document name corresponding to the line from the list produced with PNATextExtractor.java and imported in texts.ser)
 		* add the document name to the documents of the individual
 
-2. remove individuals with no valid documents
+2. Remove individuals with no valid documents
 	 
-3. save list of individuals with their info and names of documents they appear in to binary file called textFileNames.ser
+3. Save information
+* Save list of individuals with their info and names of documents they appear into a binary file called textFileNames.ser
+* Write names with all their information to a file called Output/individualsInTextfiles
 
-Takes as input the folder where the text files are
+**Takes as input the folder where the text files are**
 * Assumes a binary file with the name texts.ser
 	* contains the document names with the line they were found on with PNATextExtractor.java
 * Assumes a file called Lists/letterConversion

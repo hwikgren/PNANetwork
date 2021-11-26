@@ -8,6 +8,7 @@ information on the name (can span several lines)
 
 Profession (time period when lived) ;  
 	- Line starts with a number if several individuals with the same name, otherwise not
+		e.g. 3. Priest of Ninurta, in Kalhu:
 	- Can span over several lines
 Information on the individual     
 	- Can span over several lines
@@ -48,7 +49,7 @@ more information
 3. save list of individuals with their info and names of documents they appear in to binary file called textFileNames.ser
 
 Takes as input the folder where the text files are
-	* Assumes a binary file with the name texts.ser
-		* contains the document names with the line they were found on with PNATextExtractor.java
-	* Assumes a file called Lists/letterConversion
-		* the script should be started from the folder where the Lists folder is
+* Assumes a binary file with the name texts.ser
+	* contains the document names with the line they were found on with PNATextExtractor.java
+* Assumes a file called Lists/letterConversion
+	* the script should be started from the folder where the Lists folder is

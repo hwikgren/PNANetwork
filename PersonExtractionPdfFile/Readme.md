@@ -1,7 +1,7 @@
 ### Find names and documents in the pdf-file (Lists/pdfAsText)
 
 The last volume of the Prosopography of the Neo-Assyrian Empire, e.g. volume 3/II is not available as a text file. The individuals and the documents they appear in in this this particular volume have been extracted from a text file made from a pdf-file of the volume.
-* For the details of extracting the text from the pdf file see the file pdfTextExtraction.rdf.
+* For the details of extracting the text from the pdf file see the file pdfTextExtraction.txt.
 
 The form of the file:
 ```

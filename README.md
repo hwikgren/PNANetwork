@@ -7,7 +7,8 @@ A SHORT EXPLANATION OF EXTRACTING NETWORKS FROM PNA
   * Save name with the original line it was found in
   * <b>See folder DocumentNameExtraction for more details</b>
 * Find names and other info of individuals in the text files
-  * Add documents to the individual using the "original line - standardised name" conversion list
+  * find documents an individual is said to be mentioned in by using the "original line - standardised name" conversion list imported from texts.ser
+  * <b>See folder PersonExtractionTextFiles for more details</b>
 * Find names and other info of individual in the text extracted from PNA_3_2.pdf
 	* Find documents using the list of document names in the text files + concordance lists
 * Build network of individuals appearing in common documents

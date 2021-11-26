@@ -4,7 +4,7 @@
 	* Read the binary files containing the info on individuals in the texts files and the pdf-file
    		* save the data to a treemap called names
 	* From our lists add the SAA documents to the documents of kings
-		* _../Lists/KingsSAAo_ contains the kings in the Oracc SAAo project who are mentioned in the metadata as sender or recipient of a text and the text in SAAo projects/books 1, 4, 5, 17, 18, 19, 21
+		* _../Lists/KingsSaao_ contains the kings in the Oracc SAAo project who are mentioned in the metadata as sender or recipient of a text and the text in SAAo projects/books 1, 4, 5, 17, 18, 19, 21
 		* _../Lists/SAAKings_ contains a list compiled by us for kings who appear in SAA books 8, 9, 10, 12, 13, 15, 16
 2. Collect from the list of individuals all the documents and the individuals mentioned in them (= reverse the network)
 	1. Bimodal network
@@ -15,7 +15,7 @@
 			* Give weight to each connection of a pair: divide 1 by the number of individuals in the document -1
 				* If the same pair appears in another document, sum up the weights
 		* For each name in the pairs
-			* Get shorter profession/description from our list _../Lists/professionCategory_
+			* Get shorter profession/description from our list _../Lists/knownProffs_
 				* the list has been combiled while developping the network using Lists/professionCategory and semi-automated assigning of descriptions to the category that contains similar descriptions
 			* Get origin of individual
 				* If the profession is in our list of origins extracted from the descriptions (_../Lists/origins_)
@@ -32,7 +32,21 @@
 				* find the normalised dating in our list of timeperiods (_../Lists/timeperiods_)
 					* use that for the dating of the individual
 			* Give number for each individual and save that in a treemap called nodes
-			* Write the information on each individual to names.csv
+			* Write the information on each individual to file called names.csv
 		* For each pair in the pairs found together in at least one document
 			* get the number of each individual in the pair from the nodes treemap
-			* write the number of both individual + the weight of their connections to connections.csv
+			* write the number of both individuals + the summed weight of their connections to file called connections.csv
+
+The script PNACreateNetwork.java assumes
+* in the folder where script is started from the following files:
+	* textfileNames.ser
+	* pdfNames.ser
+* in the folder Lists the following files:
+	* KingsSaao
+	* SAAKings
+	* letterConversion
+	* timeperiods
+	* languages
+	* places
+	* origins
+	* knownProffs

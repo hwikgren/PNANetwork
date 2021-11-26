@@ -37,10 +37,11 @@ Document names are on their own lines that start with '@@'
 		* shorten the name to match the length of the thumbprint found
 	* check again for synonymous names
 
-4. Save found document name with the original line it was found in into a binary file texts.ser 
-	* the binary file used in extracting the names of individuals from the same documents
-	* Print the document name and the original line to *textsWithOriginals*
-	* Print a list of document names to *docsInTextfiles*
+4. Write information to files
+	* document names with the original line they was found in saved to the binary file called texts.ser 
+		* is used in extracting the names of individuals from the same documents (PNANmeExtractor.java)
+	* the document name and the original line to _../Output/textsWithOriginals_
+	* a list of final normalised document names to _../Output/docsInTextfiles_
 
 Further details can be seen in the commented code in src/PNATextExtractor.java
 
@@ -53,14 +54,15 @@ The script uses lists in Lists folder, i.e. _../Lists/_ (the script should be st
   * ../Lists/oraccConcordances
   	* a concordance list of document names extracted from Oracc metadata (catalogue.json) 
 
-The script assumes a folder called Output and writes to it:
-* *textsWithOriginals*: document name and the original line
-* *docsInTextfiles*: list of the normalised names of all found documents
+The script assumes a folder called Output and writes to it (can be found in folder _../Output/_):
+* _textsWithOriginals_: document name and the original line
+* _docsInTextfiles_: list of the normalised names of all found documents
+* _allDuplicates_: list of all possible duplicates from our lists and found in PNA (from oraccConcordances only SAA)
 
-There is also options to write the following lists to Output (the files can be found in _../Output_):
-* *thumbprints*: list of the document names changed to thumbprints
-* *usedDuplicates*: list of all document names found in the text files with normalised names for each
-* *allDuplicates*: list of all possible duplicates from our lists and found in PNA (from oraccConcordances only SAA)
+There is also options to write the following lists to Output (the additional files can be found in this folder):
+* _thumbprints_: list of the document names changed to thumbprints
+* _usedDuplicates_: list of all document names found in the text files with normalised names for each
+
 
 
 

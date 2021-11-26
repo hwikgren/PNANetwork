@@ -5,7 +5,7 @@ The last volume of the Prosopography of the Neo-Assyrian Empire, e.g. volume 3/I
 
 The form of the file:
 ```
-*name (translation of name); language of name; gender of name; wrtransliteration.
+*name (translation of name); language of name; gender of name; wr. transliteration.
 short description/profession (dating): longer description with document names in running text
       - Can start with a number (e.g. 3.), if there are several individuals with the same name 
 <<scholar who added to database>>.

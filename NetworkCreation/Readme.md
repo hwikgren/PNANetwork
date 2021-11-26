@@ -12,37 +12,24 @@
         * Make a simple csv-file of document-individual pairs (biModal.csv)
    2. Unimodal network
       * From the list of documents, find pairs of individuals appearing in the same document
-        * Give weight to each connection of a pair: Divide 1 by (the number of individuals in the document -1)
-		    * If the same pair appears in another document, sum up the weights
-		    * For each name in the pairs
-		    * Get shorter profession/description
-			    * If PNA profession is in our list 'professionCategory'
-				    * use the short profession there
-			    * Take away last word
-				    * If profession is in our list 'professionCategory'
-					    * use the short profession there
-				    * Else repeat (until no more words)
-				      * The professions found this way have been verified by hand and a list of these is used!!!
-			    * Else Take away last word
-				    * If any of the professions in our list 'professionCategory' starts with this proff.
-					    *use the short profession in the list
-				  * Else repeat (until no more words)
-				    * The professions found this way have been verified by hand and a list of these is used!!!
-		  * Get ethnicity
-			  * If the profession is in our list 'ethnicities'
-				  * use the ethnicity there
-				  * most individuals get 'Unknown' as ethnicity
-		  * Get the place name mentioned in the profession
-			  * Find possible names of Places (e.g. starts with Capital letter following of/from/in etc)
-			  * If the place name is in our list of real places (placesAlone)
-				* use the first place name in the profession for the place of the individual
-		  * Get dating of the individual
-			  * Correct obvious mistakes in the dating in PNA 
-				  * (e.g. latereign > late reign, probab-ably > probably, etc.)
-			  * standardise dating in PNA
-				  * (e.g. eighth > 8th, Sargon II > reign of Sargon II, etc.)
-			  * find the dating in our list of 'timeperiods'
-				  * use that for the dating of the individual
+        * Give weight to each connection of a pair: divide 1 by the number of individuals in the document -1
+	* If the same pair appears in another document, sum up the weights
+      * For each name in the pairs
+      	* Get shorter profession/description from our list 'professionCategory'
+	  * the list has been combiled while developping the network using Lists/professionCategory and semi-automated assigning of descriptions to the category that contains similar descriptions
+	* Get ethnicity
+	  * If the profession is in our list 'ethnicities'
+	    * use the ethnicity there
+	    * most individuals get 'Unknown' as ethnicity
+        * Get the place name mentioned in the profession
+	  * Find possible names of Places from the text (e.g. starts with Capital letter following of/from/in etc)
+	    * If the place name is in our list of real places (placesAlone)
+	      * use the first place name in the profession for the place of the individual
+	* Get dating of the individual
+	  * Correct obvious mistakes in the dating in PNA (e.g. latereign > late reign, probab-ably > probably, etc.)
+	  * standardise dating in PNA (e.g. eighth > 8th, Sargon II > reign of Sargon II, etc.)
+	  * find the dating in our list of 'timeperiods'
+	    * use that for the dating of the individual
 	  * Give number for each individual
 		  * Write the information on the individuals to names.csv
 	  * For each pair found in documents

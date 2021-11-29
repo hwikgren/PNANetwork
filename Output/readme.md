@@ -1,14 +1,33 @@
 ### Lists produced during the various stages of creating the network 
 #### ...and sometimes used in a following stage
 
+<b>allDocsWithIndividuals</b>: a list of all documents (in text files and the pdf file) with the names of the individuals mentioned in them
+
 <b>allDuplicates</b>: a list of all duplicate document names from our lists and found in PNA text files (from Oracc only SAAo project duplicate names)
 * used in PNANameExtractor.java
 
+<b>allNamesWithDocs</b>: a list of all names of individuals (in text files and the pdf file) with their metadata and the documents they are mentioned in
+
 <b>docsInTextfiles</b>: the final normalised names of documents found in the text files
-* used in PNANameExtractor.java
+* used in PNAPdfNameExtractor.java
 
-<b>individualsInPdffiles</b>: all the information of each individual who appears at least 1 documents according to the pdf file
+<b>individualsInPdffile</b>: all the information of each individual who appears in at least 1 document according to the pdf file
 
-<b>individualsInTextfiles</b>: all the information of each individual who appears at least 1 documents according to the text files
+<b>individualsInTextfiles</b>: all the information of each individual who appears in at least 1 document according to the text files
+
+<b>pairs</b>: the network of individuals connected through appearing in the same document(s) with the weight of their connection
+* the weight of each connection of a pair is calculated by dividing 1 with the number of individuals in the document -1
+* if the same pair appears in another document the weights are summed up
 
 <b>textsWithOriginals</b>: the final normalised name for each original line in text files with the original line
+* this information is also saved in the binary file texts.ser and used in PNANameExtractor.java
+
+<b>thumbprints</b>: a list of thumbprints of the easily found document names used in PNATextExtractor.java to find other document names in text files
+
+<b>usedDuplicates</b>: a list of all the duplicate names actually used for converting the names found in the text files (PNATextExtractor.java)
+* form of the file: found name TAB used name
+* for the conversion the following sources were used:
+  * duplicate names on the same line in the text files (indicated by the '=')
+  * ../Lists/sameText.txt
+  * ../Lists/concordances
+  * ../Lists/oraccConcordances

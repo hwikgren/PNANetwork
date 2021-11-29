@@ -62,6 +62,12 @@ The script assumes a folder called Output and writes to it (can be found in fold
 There is also options to write the following lists to Output (the additional files can be found in this folder):
 * _thumbprints_: list of the document names changed to thumbprints
 * _usedDuplicates_: list of all document names found in the text files with normalised names for each
+	* form of the file: found name TAB used name
+	* for the conversion the following sources were used:
+  		* duplicate names on the same line in the text files (indicated by the '=')
+  		* ../Lists/sameText.txt
+  		* ../Lists/concordances
+  		* ../Lists/oraccConcordances
 
 
 

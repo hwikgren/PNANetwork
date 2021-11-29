@@ -22,12 +22,3 @@
 <b>textsWithOriginals</b>: the final normalised name for each original line in text files with the original line
 * this information is also saved in the binary file texts.ser and used in PNANameExtractor.java
 
-<b>thumbprints</b>: a list of thumbprints of the easily found document names used in PNATextExtractor.java to find other document names in text files
-
-<b>usedDuplicates</b>: a list of all the duplicate names actually used for converting the names found in the text files (PNATextExtractor.java)
-* form of the file: found name TAB used name
-* for the conversion the following sources were used:
-  * duplicate names on the same line in the text files (indicated by the '=')
-  * ../Lists/sameText.txt
-  * ../Lists/concordances
-  * ../Lists/oraccConcordances

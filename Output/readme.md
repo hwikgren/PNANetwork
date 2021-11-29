@@ -1,4 +1,5 @@
-### Lists produced during the various stages of creating the network
+### Lists produced during the various stages of creating the network 
+#### ...and sometimes used in a following stage
 
 <b>allDuplicates</b>: a list of all duplicate document names from our lists and found in PNA text files (from Oracc only SAAo project duplicate names)
 * used in PNANameExtractor.java

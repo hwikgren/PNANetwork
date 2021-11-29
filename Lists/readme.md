@@ -14,7 +14,7 @@ oraccConcordances
 * E.g. saao/saa12/P235242;SAA 12 69;NARGD 42;_;VAT 9824;_;SAA 12 69
 * = use the designation (SAA 12 69) instead of the other ones
 
-MAss_Radner_conversion.csv
+MAss_Radner_conversion
 * List compiled by us to find the concordances between MAss documents and Radner forthcoming 
 * (used for the pdf-document)
 * E.g. Radner (forthcoming) I.33;MAss 10  = use the MAss number instead of the Radner
@@ -23,7 +23,7 @@ letterConversion
 * List of signs and the letter they are converted to in names of persons
 * E.g. a_ = ā = use latter instead of former
 
-KingsSAAo_oracc.csv
+KingsSAAo
 * List extracted from oracc SAAo project
 * if the king during whose reign a text is written is mentioned in the metadata as sender or recipient, he is connected to the text
 * E.g. SAA 1 175;Šarru-ken, Šarru-ukin_2
@@ -34,8 +34,8 @@ SAAKings
 * E.g. Aššūr-bāni-apli_1;SAA10;27;28;29;30;57;63;64;75;76;77;78;88;89;90;91;94;;96;100;101;104;105;131;134;136;137;138;139;140;141;152;173;174;180;182;186;195;196;197;224;225;226;227;228;276;345;346;381
 * Only used for SAA projects/books 8, 9, 10, 12, 13, 15, 16
 
-ethnicities
-* List of descriptions of people with the ethnic group the person belongs to
+origins
+* List of descriptions of people with the ethnic/regional origin extracted from them
 * E.g. +Aramean
 * 1 Sheikh of the Naqiru tribe son of
 * If the profession/description of an individual is the second line (without number (= frequency)), use the first line as ethnicity
@@ -46,7 +46,7 @@ List of languages of the names of persons
 * 7 Akk. or Arab.?
 * If the language of the name of an individual is the second line (without number), use the first line as language of the name
 
-places_alone
+places
 * List of allowed place names
 * E.g. 	+Arbunâ
 * +Argasu
@@ -54,8 +54,14 @@ places_alone
 * If a place name that has '+' sign in our list is found in the profession, assign that place to the individual
 * If a name that has no '+' sign in our list is found in the profession, assign the previous place with '+' to the individual
 
+knownProffs
+* List of descriptions that correspond to a shorter profession or description
+* The description of each person in the network has one short profession/description in this list
+* The list has been combiled while developping the network using professionCategory list and semi-automated assigning of descriptions to the category that contains similar descriptions
+
 professionCategory
 * List of descriptions that correspond to a shorter profession or description
+* The list was compiled by us during the development of the network and used for semi-automated assigning of descriptions to the category that contains similar descriptions
 * E.g. +Military personnel
 * 1 Leader of a group of archers from Nineveh
 * If the profession/description of an individual is the second line, use the first line as short profession/description

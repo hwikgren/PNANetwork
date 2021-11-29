@@ -9,22 +9,24 @@ concordances
 * E.g. StAT 2 62;A 1055;As8645a;; use the first one instead of the the latter names
 	
 oraccConcordances
-* a concordance list of document names extracted from Oracc metadata (catalogue.json)
-* oracc name and number ; designation ; accession_no ; museum_no ; popular_name ; publication_history
+* A concordance list of document names extracted from Oracc metadata (catalogue.json in each project)
+* Oracc name and number ; designation ; accession_no ; museum_no ; popular_name ; publication_history
 * E.g. saao/saa12/P235242;SAA 12 69;NARGD 42;_;VAT 9824;_;SAA 12 69
-* = use the designation (SAA 12 69) instead of the other ones
+* Use the Oracc designation category (SAA 12 69) instead of the other ones
 
 MAss_Radner_conversion
 * List compiled by us to find the concordances between MAss documents and Radner forthcoming 
 * (used for the pdf-document)
-* E.g. Radner (forthcoming) I.33;MAss 10  = use the MAss number instead of the Radner
+* E.g. Radner (forthcoming) I.33;MAss 10
+* Use the MAss number instead of the Radner
 
 letterConversion
 * List of signs and the letter they are converted to in names of persons
-* E.g. a_ = ā = use latter instead of former
+* E.g. a_ = ā
+* Use latter instead of former
 
 KingsSAAo
-* List extracted from oracc SAAo project
+* List extracted from Oracc SAAo project metadata
 * if the king during whose reign a text is written is mentioned in the metadata as sender or recipient, he is connected to the text
 * E.g. SAA 1 175;Šarru-ken, Šarru-ukin_2
 * Only used for SAAo projects/books 1, 4, 5, 17, 18, 19, 21

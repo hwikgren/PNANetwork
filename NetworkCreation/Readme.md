@@ -8,7 +8,7 @@ Using <b>namesWeighted.csv and connectionsWeighted.csv</b> one gets the normalis
 
 Using <b>bimodal.csv</b> one gets a bimodal network with both documents and the individuals appearing in them.
 
-The pairs can be found in the folder Output!
+The files with the pairs (with names) can be found in the folder Output! Those can also be used in Gephi, but then the metadata of the persons is not availbale in the graph.
 
 #### Making the network and writing csv-files
 

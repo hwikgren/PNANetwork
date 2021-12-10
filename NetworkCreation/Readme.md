@@ -1,4 +1,16 @@
-### Making the network and writing csv-files
+### The Network
+
+There are three versions of the network here that can be used to visualize with Gephi.
+
+Using <b>names.csv and connections.csv</b> one gets the unnormalised weights for the connections between pairs of individuals. The weight is formed by summing up the number of documents the two individuals appear together in.
+
+Using <b>namesWeighted.csv and connectionsWeighted.csv</b> one gets the normalised weights for the connections between pairs of individuals. the weight is calculated by adding up for each document the pair appears in 1.0 divided by the number of persons in the document (-1)
+
+Using <b>bimodal.csv</b> one gets a bimodal network with both documents and the individuals appearing in them.
+
+The pairs can be found in the folder Output!
+
+#### Making the network and writing csv-files
 
 1. Combine the info from text files and the pdf-file
 * Read the binary files containing the info on individuals in the texts files and the pdf-file

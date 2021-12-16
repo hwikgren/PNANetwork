@@ -7,7 +7,7 @@ Further details can be found in the commented code in src/PNATextExtractor.java.
 * Ignore document names that are on the 'Do not collect' list
 	* This is done in the code, but the list can be seen in the DoNotCollect.txt file
 	* The ignored documents are primarily king lists, eponym lists, and royal inscriptions, because the co-occurrence of two persons in these texts does not indicate that the persons were in contact with each other. Some texts were ignored because it was impossible to know if the document name refers to one or more texts.
-* @@-names inside parenthesis are also ignored
+* @@ names inside parenthesis are also ignored
 * If a line contains '=', there are duplicate names for the document
 	* we select the first one but save the information on the duplicate name as well
 	* but if the line contains the name 'Hunger' or 'Borger (1996)', we prefer those names
@@ -40,7 +40,7 @@ Further details can be found in the commented code in src/PNATextExtractor.java.
 
 4. Write information to files
 	* document names with the original line they were found in are saved to the binary file called 'texts.ser'
-		* it is used for extracting the names of individuals from the same documents (PNANameExtractor.java)
+		* it is used for extracting the names of individuals from the documents (PNANameExtractor.java)
 	* write the document name and the original line to _../Output/textsWithOriginals_
 	* write a list of final normalized document names to _../Output/docsInTextfiles_
 

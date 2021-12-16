@@ -23,26 +23,26 @@
 * Correct obvious mistakes and inconsistences
 	* E.g., @@As 01319 R014 (636*) > As1319
 	* and Trade 1998 > Trade 2
-* If an obvious name is found, it is saved in a treemap called 'easyNames'
+* If an obvious name is found, it is saved in a treemap called 'easyNames' ***mitä "obvious name" tarkoittaa?***
 	* all document names are saved in a treemap called 'texts' with the original line they were found from
-		* at this point, there might still be several versions of the same document <mark> Tarkoittaako tämä duplikaatteja, joilla on eri nimi?</mark>
+		* at this point, there might still be several versions of the same document ***Tarkoittaako tämä duplikaatteja, joilla on eri nimi?***
 
-2. Make thumbprints of the easily found names in easyNames
+2. Make thumbprints of the easily found names in 'easyNames'
 	* thumbprints are made by replacing numbers with 1 and spaces with _
 	* Eg., SAA 14 123 > SAA_11_111
 
 3. Check all the document names in the 'texts' treemap again
-	* use synonymous name if on our concordance lists
+	* use a synonymous name if one is found on our concordance lists
 	* make a thumbprint
 		* check if the list of earlier thumbprints has this thumbprint or a shorter version of it
 		* shorten the name to match the length of the thumbprint found
 	* check again for synonymous names
 
 4. Write information to files
-	* document names with the original line they was found in saved to the binary file called texts.ser 
-		* is used in extracting the names of individuals from the same documents (PNANmeExtractor.java)
-	* the document name and the original line to _../Output/textsWithOriginals_
-	* a list of final normalised document names to _../Output/docsInTextfiles_
+	* document names with the original line they were found in are saved to the binary file called 'texts.ser'
+		* it is used for extracting the names of individuals from the same documents (PNANmeExtractor.java)
+	* write the document name and the original line to _../Output/textsWithOriginals_
+	* write a list of final normalized document names to _../Output/docsInTextfiles_
 
 Further details can be seen in the commented code in src/PNATextExtractor.java
 

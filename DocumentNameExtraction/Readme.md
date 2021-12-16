@@ -1,6 +1,6 @@
 ### Find document names from the text file versions of PNA
 
-(see textfileExample.txt for a small extract from one)
+Further details can be seen in the commented code in src/PNATextExtractor.java. See textfileExample.txt for a small extract from a text file.
 
 1. Iterate through the text files and find possible document names
 * Document names are on their own lines that start with '@@'
@@ -43,8 +43,6 @@
 		* it is used for extracting the names of individuals from the same documents (PNANameExtractor.java)
 	* write the document name and the original line to _../Output/textsWithOriginals_
 	* write a list of final normalized document names to _../Output/docsInTextfiles_
-
-Further details can be seen in the commented code in src/PNATextExtractor.java.
 
 The script uses lists in the Lists folder, i.e. _../Lists/_ (the script should be started from the folder where the Lists folder is)
   * ../Lists/concordances

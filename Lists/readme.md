@@ -20,15 +20,18 @@ knownProffs
 * The list has been compiled using the professionCategory list and semi-automatically assigning the raw PNA descriptions to the category that contains similar descriptions
 
 languages
-List of languages of the names of persons
-* E.g. +Semitic
+* List of languages of the personal names
+* Used for assigning the raw PNA descriptions to broader categories
+* E.g.,
+* +Semitic
 * 7 Akk. or Arab.?
-* If the language of the name of an individual is the second line (without number), use the first line as language of the name
+* If the language of the personal name is the second line (without the number), use the first line as the NameOrigin attribute in the network
 
 letterConversion
-* List of signs and the letter they are converted to in names of persons
-* E.g. a_ = ā
-* Use latter instead of former
+* PNA text files use combinations of ASCII characters to represent various Unicode characters
+* The list gives the sign combinations and the letters they are converted to in personal names
+* E.g., a_ = ā
+* Use the latter instead of the former
 
 MAss_Radner_conversion
 * List compiled from WVDOG 152 to find the concordances between the documents titled 'MAss' and 'Radner (forthcoming)' 
@@ -62,9 +65,10 @@ places
 professionCategory
 * List of raw PNA descriptions of people's professions that correspond to broader categories
 * The list was compiled by us during the development of the network and used for semi-automated assigning of descriptions to the category that contains similar descriptions (see 'knownProffs')
-* E.g. +Military personnel
+* E.g.,
+* +Military personnel
 * 1 Leader of a group of archers from Nineveh
-* If the profession/description of an individual is the second line, use the first line as the profession category
+* If the profession/description of an individual is the second line, use the first line as the Profession category in the network
 
 SAAKings
 * A list compiled by us connecting kings to the SAA project texts that relate to the king even if he is not be explicitly mentioned

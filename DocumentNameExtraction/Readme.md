@@ -1,6 +1,6 @@
 ### Find document names from the text file versions of PNA
 
-Further details can be seen in the commented code in src/PNATextExtractor.java. See textfileExample.txt for a small extract from a text file.
+Further details can be found in the commented code in src/PNATextExtractor.java. See textfileExample.txt for a small extract from a text file.
 
 1. Iterate through the text files and find possible document names
 * Document names are on their own lines that start with '@@'

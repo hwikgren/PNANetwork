@@ -1,4 +1,4 @@
-### Lists with which the dataset was produced
+### Lists used to produce the dataset
 
 concordances
 * A list compiled from the indexes of BATSH 6 and StAT 1-3 to find texts that have different names but are the same document

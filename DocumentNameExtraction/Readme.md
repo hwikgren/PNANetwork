@@ -23,9 +23,9 @@
 * Correct obvious mistakes and inconsistences
 	* E.g., @@As 01319 R014 (636*) > As1319
 	* and Trade 1998 > Trade 2
-* If an obvious name is found, it is saved in a treemap called 'easyNames' ***mitä "obvious name" tarkoittaa?***
+* If an obvious name is found, it is saved in a treemap called 'easyNames' ***Tero: mitä "obvious name" tarkoittaa?***
 	* all document names are saved in a treemap called 'texts' with the original line they were found from
-		* at this point, there might still be several versions of the same document ***Tarkoittaako tämä duplikaatteja, joilla on eri nimi?***
+		* at this point, there might still be several versions of the same document ***Tero: Tarkoittaako tämä duplikaatteja, joilla on eri nimi?***
 
 2. Make thumbprints of the easily found names in 'easyNames'
 	* thumbprints are made by replacing numbers with 1 and spaces with _

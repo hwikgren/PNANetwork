@@ -1,19 +1,21 @@
-#### Lists with which the dataset was produced
+### Lists with which the dataset was produced
 
 concordances
 * List compiled by us to find texts that have different names but are really the same document
 * E.g. StAT 2 62;A 1055;As8645a;; use the first one instead of the the latter names
 
 KingsSAAo
-* List extracted from Oracc SAAo project metadata
-* if the king during whose reign a text is written is mentioned in the metadata as sender or recipient, he is connected to the text
-* E.g. SAA 1 175;Šarru-ken, Šarru-ukin_2
-* Only used for SAAo projects/books 1, 4, 5, 17, 18, 19, 21
+* List extracted from the Oracc SAAo project metadata
+* If the king, during whose reign a text is written, is mentioned in the metadata as the sender or recipient of a letter, he is connected to the text
+* E.g., SAA 1 175;Šarru-ken, Šarru-ukin_2
+* Only used for the SAAo projects/books 1, 4, 5, 17, 18, 19, 21
 
 knownProffs
-* List of descriptions that correspond to a shorter profession or description
-* The description of each person in the network has one short profession/description in this list
-* The list has been combiled while developping the network using professionCategory list and semi-automated assigning of descriptions to the category that contains similar descriptions
+* Used for assigning the raw PNA descriptions of people's professions (or similar) to broader categories
+* Main category TAB Raw PNA information
+* E.g., Craftspeople	Carpenter from Assur
+* Each person in the network has a profession attribute that corresponds to a profession category
+* The list has been compiled using the professionCategory list and semi-automatically assigning the raw PNA descriptions to the category that contains similar descriptions
 
 languages
 List of languages of the names of persons

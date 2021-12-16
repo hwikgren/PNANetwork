@@ -28,7 +28,7 @@
 		* at this point, there might still be several versions of the same document ***Tero: Tarkoittaako tämä duplikaatteja, joilla on eri nimi?***
 
 2. Make thumbprints of the easily found names in 'easyNames'
-	* thumbprints are made by replacing numbers with 1 and spaces with _
+	* thumbprints are made by replacing numbers with 1 and spaces with _ ***Tero: thumbprinteissä näkyi myös isoja ja pieniä x-kirjaimia. Korvaavatko ne aakkosia, jotka liitetään numerosarjan perään?***
 	* Eg., SAA 14 123 > SAA_11_111
 
 3. Check all the document names in the 'texts' treemap again

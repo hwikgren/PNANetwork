@@ -1,15 +1,16 @@
 # PNA Network
 The data used for creating "A Social Network of the <i>Prosopography of the Neo-Assyrian Empire</i>"
 
-A SHORT EXPLANATION OF EXTRACTING NETWORKS FROM THE <i>PROSOPOGRAPHY OF THE NEO-ASSYRIAN EMPIRE</i> (PNA)
-* Get document names from the text files provided by Simo Parpola (Editor in Chief of PNA)
+A SHORT EXPLANATION OF THE WORKFLOW AND THE CONTENTS OF THE REPOSITORY
+The networks were created from the text and pdf file versions of the <i>Prosopography of the Neo-Assyrian Empire</i> (PNA)
+* Get document names from the PNA text files provided by Simo Parpola (Editor in Chief of PNA)
   * Use concordances to standardize the names
   * Save the name with the original line it was found in
   * <b>See the folder DocumentNameExtraction for more details</b>
 * Find names and other info of individuals in the text files
-  * find the documents an individual is said to be mentioned in by using the "original line - standardized name" conversion list produced in the previous step
+  * Find the documents in which an individual is mentioned by using the "original line - standardized name" conversion list produced in the previous step
   * <b>See the folder PersonExtractionTextFiles for more details</b>
-* Find names and other info of individuals in the text extracted from PNA_3_2.pdf
+* Find names and other info of individuals in the text file extracted from PNA_3_2.pdf
 	* Find documents using the list of document names in the text files + concordance lists
 	* <b>See the folder PersonExtractionPdfFile for more details</b>
 * Build a two-mode network of individuals and the documents they are attested in and a one-mode co-occurrence network of people attested in the same document

@@ -60,7 +60,7 @@ The script assumes a folder called Output and writes to it (can be found in fold
 * _docsInTextfiles_: list of the normalized names of all found documents
 * _allDuplicates_: list of all possible duplicates included in our lists and found in PNA (including only the SAA texts from the list 'oraccConcordances')
 
-There is also an option to write the following lists to Output (the additional files can be found in this folder): ***Tero: onko nämä tarkoitus laittaa repoon?***
+There is also an option to write the following lists to Output (the additional files can be found in this folder): ***Tero: olisiko loogisempaa laittaa nämäkin repon Output-kansioon? Nyt meni hetki ennen kuin tajusin, mistä ne löytyvät.***
 * _thumbprints_: list of the document names changed to thumbprints
 * _usedDuplicates_: list of all document names found in the text files with a normalized name for each
 	* form of the file: found name TAB used name

@@ -46,32 +46,28 @@
 
 Further details can be seen in the commented code in src/PNATextExtractor.java.
 
-The script uses lists in Lists folder, i.e. _../Lists/_ (the script should be started from the folder where Lists-folder is)
+The script uses lists in the Lists folder, i.e. _../Lists/_ (the script should be started from the folder where the Lists folder is)
   * ../Lists/concordances
-    * List compiled by us to find texts that have different names but are really the same document
-    * Especially Asxxxxx, StAT, and BATSH documents
+    * A list compiled from the indexes of BATSH 6 and StAT 1-3 to find texts that have different names but are the same document
   * ../Lists/sameText.txt
     * Our first list of documents that are in fact the same although they have different names
   * ../Lists/oraccConcordances
-  	* a concordance list of document names extracted from Oracc metadata (catalogue.json) 
+  	* a concordance list of document names extracted from the Oracc metadata (catalogue.json) 
+***Tero: missä vaiheessa otetaan huomioon /Lists/MAss_Radner_conversion?***
 
 The script assumes a folder called Output and writes to it (can be found in folder _../Output/_):
-* _textsWithOriginals_: document name and the original line
-* _docsInTextfiles_: list of the normalised names of all found documents
-* _allDuplicates_: list of all possible duplicates from our lists and found in PNA (from oraccConcordances only SAA)
+* _textsWithOriginals_: the normalized document name and the original line
+* _docsInTextfiles_: list of the normalized names of all found documents
+* _allDuplicates_: list of all possible duplicates included in our lists and found in PNA (including only the SAA texts from the list 'oraccConcordances')
 
-There is also options to write the following lists to Output (the additional files can be found in this folder):
+There is also an option to write the following lists to Output (the additional files can be found in this folder): ***Tero: onko nämä tarkoitus laittaa repoon?***
 * _thumbprints_: list of the document names changed to thumbprints
-* _usedDuplicates_: list of all document names found in the text files with normalised names for each
+* _usedDuplicates_: list of all document names found in the text files with a normalized name for each
 	* form of the file: found name TAB used name
 	* for the conversion the following sources were used:
-  		* duplicate names on the same line in the text files (indicated by the '=')
+  		* duplicate names on the same line in the text files (indicated by '=')
   		* ../Lists/sameText.txt
   		* ../Lists/concordances
   		* ../Lists/oraccConcordances
-
-
-
-
 
 

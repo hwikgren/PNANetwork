@@ -29,10 +29,10 @@ letterConversion
 * Use latter instead of former
 
 MAss_Radner_conversion
-* List compiled by us to find the concordances between MAss documents and Radner forthcoming 
-* (used for the pdf-document)
+* List compiled from WVDOG 152 to find the concordances between the documents titled 'MAss' and 'Radner (forthcoming)' 
+* (used for the pdf document)
 * E.g. Radner (forthcoming) I.33;MAss 10
-* Use the MAss number instead of the Radner
+* Use the MAss number instead of Radner (forthcoming)
 
 oraccConcordances
 * A concordance list of document names extracted from Oracc metadata (catalogue.json in each project)
@@ -58,11 +58,11 @@ places
 * If a name that has no '+' sign in our list is found in the profession, assign the previous place with '+' to the individual
 
 professionCategory
-* List of descriptions that correspond to a shorter profession or description
-* The list was compiled by us during the development of the network and used for semi-automated assigning of descriptions to the category that contains similar descriptions
+* List of raw PNA descriptions of people's professions that correspond to broader categories
+* The list was compiled by us during the development of the network and used for semi-automated assigning of descriptions to the category that contains similar descriptions (see 'knownProffs')
 * E.g. +Military personnel
 * 1 Leader of a group of archers from Nineveh
-* If the profession/description of an individual is the second line, use the first line as short profession/description
+* If the profession/description of an individual is the second line, use the first line as the profession category
 
 SAAKings
 * A list compiled by us connecting kings to SAA project texts even if they are not mentioned

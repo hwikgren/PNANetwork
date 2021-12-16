@@ -5,7 +5,7 @@
 1. Iterate through the text files and find possible document names
 * Document names are on their own lines that start with '@@'
 * Ignore document names that are on the 'Do not collect' list
-	* This is done in the code, but the list can be seen in the DoNoCollect.txt file
+	* This is done in the code, but the list can be seen in the DoNotCollect.txt file
 	* The ignored documents are primarily king lists, eponym lists, and royal inscriptions, because the co-occurrence of two persons in these texts does not indicate that the persons were in contact with each other. Some texts were ignored because it was impossible to know if the document name refers to one or more texts.
 * @@-names inside parenthesis are also ignored
 * If a line contains '=', there are duplicate names for the document

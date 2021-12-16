@@ -1,12 +1,14 @@
 ### Lists with which the dataset was produced
 
 concordances
-* List compiled by us to find texts that have different names but are really the same document
-* E.g. StAT 2 62;A 1055;As8645a;; use the first one instead of the the latter names
+* A list compiled from the indexes of BATSH 6 and StAT 1-3 to find texts that have different names but are the same document
+* E.g., StAT 2 62;A 1055;As8645a;;
+* Use the first one instead of the the latter names
 
 KingsSAAo
 * List extracted from the Oracc SAAo project metadata
 * If the king, during whose reign a text is written, is mentioned in the metadata as the sender or recipient of a letter, he is connected to the text
+* These attestations are often missing from PNA
 * E.g., SAA 1 175;Šarru-ken, Šarru-ukin_2
 * Only used for the SAAo projects/books 1, 4, 5, 17, 18, 19, 21
 
@@ -65,9 +67,10 @@ professionCategory
 * If the profession/description of an individual is the second line, use the first line as the profession category
 
 SAAKings
-* A list compiled by us connecting kings to SAA project texts even if they are not mentioned
+* A list compiled by us connecting kings to the SAA project texts that relate to the king even if he is not be explicitly mentioned
+* These instances are often missing from PNA
 * E.g. Aššūr-bāni-apli_1;SAA10;27;28;29;30;57;63;64;75;76;77;78;88;89;90;91;94;;96;100;101;104;105;131;134;136;137;138;139;140;141;152;173;174;180;182;186;195;196;197;224;225;226;227;228;276;345;346;381
-* Only used for SAA projects/books 8, 9, 10, 12, 13, 15, 16
+* Only used for the SAA projects/books 8, 9, 10, 12, 13, 15, 16
 
 sameText.txt
 * Our first list of documents that are in fact the same although they have different names

@@ -40,7 +40,7 @@ Further details can be found in the commented code in src/PNATextExtractor.java.
 
 4. Write information to files
 	* document names with the original line they were found in are saved to the binary file called 'texts.ser'
-		* it is used for extracting the names of individuals from the documents (PNANameExtractor.java)
+		* it is used for extracting the names of individuals from the documents (/PersonExtractionTextFiles/src/PNANameExtractor.java)
 	* write the document name and the original line to _../Output/textsWithOriginals_
 	* write a list of final normalized document names to _../Output/docsInTextfiles_
 

@@ -12,6 +12,7 @@ A SHORT EXPLANATION OF THE WORKFLOW AND THE CONTENTS OF THE REPOSITORY
   * <b>See the folder PersonExtractionTextFiles for more details</b>
 * Find names and other info of individuals in the text file extracted from PNA_3_2.pdf
 	* Find documents using the list of document names in the text files + concordance lists
+	* ***Tero: tästä näyttäisi puuttuvat tästä tieto siitä, miten yksilöt haetaan tiedostosta***
 	* <b>See the folder PersonExtractionPdfFile for more details</b>
 * Build a two-mode network of individuals and the documents they are attested in and a one-mode co-occurrence network of people attested in the same document
 	* For the one-mode network, find shorter/standardized versions of the language of a name, date, profession, ethnicity, and place 

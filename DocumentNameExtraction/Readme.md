@@ -40,11 +40,11 @@
 
 4. Write information to files
 	* document names with the original line they were found in are saved to the binary file called 'texts.ser'
-		* it is used for extracting the names of individuals from the same documents (PNANmeExtractor.java)
+		* it is used for extracting the names of individuals from the same documents (PNANameExtractor.java)
 	* write the document name and the original line to _../Output/textsWithOriginals_
 	* write a list of final normalized document names to _../Output/docsInTextfiles_
 
-Further details can be seen in the commented code in src/PNATextExtractor.java
+Further details can be seen in the commented code in src/PNATextExtractor.java.
 
 The script uses lists in Lists folder, i.e. _../Lists/_ (the script should be started from the folder where Lists-folder is)
   * ../Lists/concordances

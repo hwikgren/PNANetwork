@@ -1,4 +1,4 @@
-### Find document names from the text file versions of PNA
+### How our script extracts document names from the text file versions of PNA
 
 Further details can be found in the commented code in src/PNATextExtractor.java. See textfileExample.txt for a small extract from a text file.
 

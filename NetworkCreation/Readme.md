@@ -2,10 +2,10 @@
 
 There are three different versions of the network, two one-mode networks and a two-mode network.
 
-Using <b>names.csv and connections.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The weight of an edge equals the number of times two persons are attested in the same document.
+Using <b>names.csv and connections.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The weight of an edge equals the number of times two persons co-occur in different documents.
 
-Using <b>namesWeighted.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The edge weights in this network have been normalized as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. To calculate the edge weight, add up the results in all the documents.
-***Tero: eikö niin, että names.csv ja namesWeighted.csv ovat täsmälleen sama tiedosto? Siinä tapauksessa voitaneen poistaa namesWeighted.csv?***
+Using <b>namesWeighted.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The edge weights in this network have been normalized as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. To calculate the edge weight, add up the weights in all the documents.
+***Tero: eikö niin, että names.csv ja namesWeighted.csv ovat täsmälleen sama tiedosto? Siinä tapauksessa namesWeighted.csv lienee tarpeeton?***
 
 Using <b>bimodal.csv</b> one can create a two-mode network of documents and the individuals appearing in them.
 

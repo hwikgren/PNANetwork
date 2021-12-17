@@ -52,7 +52,7 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 	* For each pair of individuals found together at least in one document
 		* Get the id number of both individuals from the 'nodes' treemap
 		* Write the number of both individuals + the summed weight of their connections to file called connections.csv
-***Tero: Voisitko tarkentaa tähän vielä sen, miten normalisoidut/normalisoimattomat connections-tiedostot tuotetaan? Nyt puhutaan vain connections.csv-tiedostosta niin kuin se olisi normalisoitu tiedosto.***
+***Tero: Voisitko tarkentaa tähän vielä sen, miten connections.csv- ja connectionsWeighted.csv-tiedostot tuotetaan? Nyt puhutaan vain connections.csv-tiedostosta niin kuin se olisi normalisoitu tiedosto.***
 
 4. Write other infomation to files
 * Write the names of individuals and the names of the documents they appear in to the file Output/allNamesWithDocs

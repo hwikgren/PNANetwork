@@ -50,7 +50,7 @@ The script uses lists in the Lists folder, i.e. _../Lists/_ (the script should b
   * ../Lists/sameText.txt
     * Our first list of documents that are in fact the same although they have different names
   * ../Lists/oraccConcordances
-  	* a concordance list of document names extracted from the Oracc metadata (catalogue.json) 
+  	* a concordance list of document names extracted from the Oracc metadata (catalogue.json in each Oracc project) 
 
 The script assumes a folder called Output and writes to it (can be found in folder _../Output/_):
 * _textsWithOriginals_: the normalized document name and the original line

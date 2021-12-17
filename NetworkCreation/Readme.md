@@ -22,7 +22,7 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 	* _../Lists/KingsSaao_ is a list extracted from the Oracc SAAo project metadata (subprojects 1, 4, 5, 17, 18, 19, 21). If the king, during whose reign a letter is written, is mentioned in the metadata as the sender or recipient of the letter, he is connected to this document.
 	* _../Lists/SAAKings_ contains a list connecting kings to the SAA project texts that relate to the king even if he is not explicitly mentioned (SAAo projects 8, 9, 10, 12, 13, 15, 16)
 
-2. Collect from the list of individuals all the documents and the individuals mentioned in them (= reverse the network)
+2. From the list of individuals, collect all the documents and the individuals mentioned in them (= reverse the network)
 * = Bimodal network
 
 3. From the list of documents, find pairs of individuals appearing in the same document

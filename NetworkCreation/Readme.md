@@ -4,7 +4,7 @@ There are three different versions of the network, two one-mode networks and a t
 
 Using <b>names.csv and connections.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The weight of an edge equals the number of times two persons co-occur in different documents.
 
-Using <b>namesWeighted.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The edge weights in this network have been normalized as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. To calculate the edge weight, add up the weights in all the documents.
+Using <b>names.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The edge weights in this network have been normalized as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. To calculate the edge weight, add up the weights in all the documents.
 ***Tero: eikö niin, että names.csv ja namesWeighted.csv ovat täsmälleen sama tiedosto? Siinä tapauksessa namesWeighted.csv lienee tarpeeton?***
 
 Using <b>bimodal.csv</b> one can create a two-mode network of documents and the individuals appearing in them.
@@ -22,13 +22,17 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 	* _../Lists/KingsSaao_ is a list extracted from the Oracc SAAo project metadata (subprojects 1, 4, 5, 17, 18, 19, 21). If the king, during whose reign a letter is written, is mentioned in the metadata as the sender or recipient of the letter, he is connected to this document.
 	* _../Lists/SAAKings_ contains a list connecting kings to the SAA project texts that relate to the king even if he is not explicitly mentioned (SAAo projects 8, 9, 10, 12, 13, 15, 16)
 
-2. From the list of individuals, collect all the documents and the individuals mentioned in them (= reverse the network) ***Tero: Mikä tämä "list of individuals" on? Sitä ei ole mainittu aikaisemmin.***
+2. From the 'names' treemap, collect all the documents and the individuals mentioned in them to treemap called 'reversed' (= reverse the network) 
 * = Bimodal network
 
-3. From the list of documents, find pairs of individuals appearing in the same document ***Tero: Mikä tämä "list of documents" on? Sitä ei ole mainittu aikaisemmin.***
+3. From 'reversed' treemap, find pairs of individuals appearing in the same document 
 * but only if the document contains more than one individual
 * = one-mode network
-* Give weight to each connection between two individuals: divide 1 by the number of individuals in the document -1 \[1/(n-1)]
+* Give weight to each connection between two individuals: 
+	* there are two alternative ways of calculating the weight
+		* the simple way is to count all the documents both the individuals are mentioned in
+		* in order to alleviate false connections between people who had nothing to do with each other but just happened to be mentioned in the same text with, for example, a long list of names, the weight can be normalised by giving less value to connections found in such documents by:
+			* dividing 1 by the number of individuals in the document -1 \[1/(n-1)]
 	* If the same pair appears in another document, sum up the weights
 	* For each name in the pairs
 		* Get a Profession attribute for the individuals from our list _../Lists/knownProffs_
@@ -52,7 +56,6 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 	* For each pair of individuals found together at least in one document
 		* Get the id number of both individuals from the 'nodes' treemap
 		* Write the number of both individuals + the summed weight of their connections to file called connections.csv
-***Tero: Voisitko tarkentaa tähän vielä sen, miten connections.csv- ja connectionsWeighted.csv-tiedostot tuotetaan? Nyt puhutaan vain connections.csv-tiedostosta niin kuin se olisi normalisoitu tiedosto.***
 
 4. Write other infomation to files
 * Write the names of individuals and the names of the documents they appear in to the file Output/allNamesWithDocs

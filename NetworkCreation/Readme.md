@@ -55,14 +55,16 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 ***Tero: Voisitko tarkentaa tähän vielä sen, miten normalisoidut/normalisoimattomat connections-tiedostot tuotetaan? Nyt puhutaan vain connections.csv-tiedostosta niin kuin se olisi normalisoitu tiedosto.***
 
 4. Write other infomation to files
-* write the names of individuals and the names of the documents they appear in to the file Output/allNamesWithDocs
-* write all documents with at least 2 individuals and the names of the persons to Output/allDocsWithIndividuals
-* write the pairs of people that appear in common documents with the weight of the number of connections to Output/pairs
-* optionally make a simple csv-file of document-individual pairs (biModal.csv)
+* Write the names of individuals and the names of the documents they appear in to the file Output/allNamesWithDocs
+* Write all documents with at least 2 individuals and the names of the persons to Output/allDocsWithIndividuals
+* Write the pairs of people who appear in the same documents
+	* with an edge weight that equals the number of their co-occurrences (Output/pairs)
+	* with normalized edge weights (Output/pairsWeighted)
+* Optionally, make a simple csv file of document-individual pairs (biModal.csv)
 
 
 The script PNACreateNetwork.java assumes
-* the following files in the folder where script is started from:
+* the following files in the folder where the script is started from:
 	* textfileNames.ser
 	* pdfNames.ser
 * the following files in the folder Lists:

@@ -25,7 +25,7 @@ languages
 * E.g.,
 * +Semitic
 * 7 Akk. or Arab.?
-* If the language of the personal name is the second line (without the number (= frequency)), use the first line as the NameOrigin attribute in the network
+* If the language of the personal name is the second line (without the number (= frequency)), use the first line as the person's NameOrigin attribute in the network
 
 letterConversion
 * PNA text files use combinations of ASCII characters to represent various Unicode characters
@@ -52,7 +52,7 @@ origins
 * E.g.,
 * +Aramean
 * 1 Sheikh of the Naqiru tribe son of
-* If the description of an individual is the second line (without the number (= frequency)), use the first line as the Ethnicity attribute in the network
+* If the description of an individual is the second line (without the number (= frequency)), use the first line as the person's Ethnicity attribute in the network
 
 pdfAsText
 ***Tero: tämä tiedosto pitänee poistaa tekijänoikeussyistä. Toimisiko tämänkin kohdalla se, että otetaan siitä lyhyt pätkä esimerkiksi?***
@@ -72,7 +72,7 @@ professionCategory
 * E.g.,
 * +Military personnel
 * 1 Leader of a group of archers from Nineveh
-* If the profession/description of an individual is the second line (without the number (= frequency)), use the first line as the Profession attribute in the network
+* If the profession/description of an individual is the second line (without the number (= frequency)), use the first line as the person's Profession attribute in the network
 
 SAAKings
 * A list compiled by us connecting kings to the SAA project texts that relate to the king even if he is not be explicitly mentioned
@@ -90,5 +90,5 @@ timeperiods
 * E.g.,
 * +668-600 Assurbanipal and/or later
 * 1 7th century probably reign of Assurbanipal or later
-* If the dating of an individual is the second line (without the number (= frequency)), use the first line as the Time attribute in the networks
+* If the dating of an individual is the second line (without the number (= frequency)), use the first line as the person's Time attribute in the network
 ***Tero: tämän timeperiods-tiedoston alusta voisi poistaa suomenkielisen kommenttirivin***

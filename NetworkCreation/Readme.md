@@ -22,26 +22,26 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 	* _../Lists/KingsSaao_ is a list extracted from the Oracc SAAo project metadata (subprojects 1, 4, 5, 17, 18, 19, 21). If the king, during whose reign a letter is written, is mentioned in the metadata as the sender or recipient of the letter, he is connected to this document.
 	* _../Lists/SAAKings_ contains a list connecting kings to the SAA project texts that relate to the king even if he is not explicitly mentioned (SAAo projects 8, 9, 10, 12, 13, 15, 16)
 
-2. From the list of individuals, collect all the documents and the individuals mentioned in them (= reverse the network)
+2. From the list of individuals, collect all the documents and the individuals mentioned in them (= reverse the network) ***Tero: Mikä tämä "list of individuals" on? Sitä ei ole mainittu aikaisemmin.***
 * = Bimodal network
 
-3. From the list of documents, find pairs of individuals appearing in the same document
-* but only if document contains more than one individual
-* = Unimodal network
-* Give weight to each connection of a pair: divide 1 by the number of individuals in the document -1
+3. From the list of documents, find pairs of individuals appearing in the same document ***Tero: Mikä tämä "list of documents" on? Sitä ei ole mainittu aikaisemmin.***
+* but only if the document contains more than one individual
+* = one-mode network
+* Give weight to each connection between two individuals: divide 1 by the number of individuals in the document -1 \[1/(n-1)]
 	* If the same pair appears in another document, sum up the weights
 	* For each name in the pairs
-		* Get shorter profession/description from our list _../Lists/knownProffs_
-			* the list has been combiled while developping the network using Lists/professionCategory and semi-automated assigning of descriptions to the category that contains similar descriptions
-		* Get origin of individual
-			* If the profession is in our list of origins extracted from the descriptions (_../Lists/origins_)
-				* use the origin there
-				* most individuals get 'Unknown' as origin
-		* Get the place name mentioned in the description as the place where the individual is active
-			* Find possible names of places from the text (e.g. starts with Capital letter following of/from/in/active in/mayor of etc)
-				* If that place name is in our list of real places (and their normalisation), i.e. _../Lists/places_
+		* Get a Profession attribute for the individuals from our list _../Lists/knownProffs_
+			* The list has been compiled using Lists/professionCategory and semi-automatically assigning the raw PNA descriptions to the category that contains similar descriptions
+		* Get an Ethnicity attribute for the individuals
+			* If the raw PNA description is in our list of ethnicities (_../Lists/origins_)
+				* use the Ethnicity category there
+			* Else, individuals get 'Unknown' as the Ethnicity attribute
+		* Get the Place attribute for the individuals
+			* Find possible names of places from the raw PNA descriptions (e.g., starts with a capital letter after 'of'/'from'/'in'/'active in'/'mayor of', etc.)
+				* If that place name is in our list of real places (and their normalizations), i.e. _../Lists/places_
 					* use it
-				* else use the first word in the description which is in our list of real places if any
+				* Else use the first word in the description which is in our list of real places if any
 		* Get dating of the individual
 			* Correct obvious mistakes in the dating in PNA (e.g. latereign > late reign, probab-ably > probably, etc.)
 			* standardise dating in PNA (e.g. eighth > 8th, Sargon II > reign of Sargon II, etc.)

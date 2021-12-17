@@ -25,7 +25,7 @@ languages
 * E.g.,
 * +Semitic
 * 7 Akk. or Arab.?
-* If the language of the personal name is the second line (without the number), use the first line as the NameOrigin attribute in the network
+* If the language of the personal name is the second line (without the number (= frequency)), use the first line as the NameOrigin attribute in the network
 
 letterConversion
 * PNA text files use combinations of ASCII characters to represent various Unicode characters
@@ -40,16 +40,19 @@ MAss_Radner_conversion
 * Use the MAss number instead of Radner (forthcoming)
 
 oraccConcordances
-* A concordance list of document names extracted from Oracc metadata (catalogue.json in each project)
+* A concordance list of document names extracted from the Oracc metadata (catalogue.json in each Oracc project)
+* This file is used for collapsing the duplicate names of the same text
 * Oracc name and number ; designation ; accession_no ; museum_no ; popular_name ; publication_history
 * E.g. saao/saa12/P235242;SAA 12 69;NARGD 42;_;VAT 9824;_;SAA 12 69
 * Use the Oracc designation category (SAA 12 69) instead of the other ones
 
 origins
-* List of descriptions of people with the ethnic/regional origin extracted from them
-* E.g. +Aramean
+* List of raw PNA descriptions of people's ethnicities that correspond to broader categories
+* Used for assigning the raw PNA descriptions to broader categories
+* E.g.,
+* +Aramean
 * 1 Sheikh of the Naqiru tribe son of
-* If the profession/description of an individual is the second line (without number (= frequency)), use the first line as ethnicity
+* If the description of an individual is the second line (without the number (= frequency)), use the first line as the Ethnicity attribute in the network
 
 pdfAsText
 ***Tero: kuvaus puuttuu***

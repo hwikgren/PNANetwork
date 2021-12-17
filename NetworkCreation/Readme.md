@@ -11,7 +11,7 @@ Using <b>bimodal.csv</b> one can create a two-mode network of documents and the 
 
 The files 'pairs' and 'pairsWeighted' in the Output folder can also be used to create the one-mode networks. Those can be used in Gephi, but they do not contain the node attributes. A line with Source;Target;Weight has to be added to the beginning of the files in order to use them in Gephi.
 
-#### How our script creates network data and writes csv files
+#### How our script creates the network data and writes csv files
 
 Further details can be found in the commented code in src/PNACreateNetwork.java.
 

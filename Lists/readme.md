@@ -7,7 +7,7 @@ concordances
 
 KingsSAAo
 * List extracted from the Oracc SAAo project metadata
-* If the king, during whose reign a text is written, is mentioned in the metadata as the sender or recipient of a letter, he is connected to the text
+* If the king, during whose reign a letter is written, is mentioned in the metadata as the sender or recipient of the letter, he is connected to this document
 * These attestations are often missing from PNA
 * E.g., SAA 1 175;Šarru-ken, Šarru-ukin_2
 * Only used for the SAAo projects/books 1, 4, 5, 17, 18, 19, 21

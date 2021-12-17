@@ -1,10 +1,11 @@
-### The Network
+### Network Creation
 
-There are three versions of the network here that can be used to visualize with Gephi.
+There are three different versions of the network, two one-mode networks and a two-mode network.
 
-Using <b>names.csv and connections.csv</b> one gets the unnormalised weights for the connections between pairs of individuals. The weight is formed by summing up the number of documents the two individuals appear together in.
+Using <b>names.csv and connections.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The weight of an edge equals the number of times two persons are attested in the same document.
 
-Using <b>namesWeighted.csv and connectionsWeighted.csv</b> one gets the normalised weights for the connections between pairs of individuals. the weight is calculated by adding up for each document the pair appears in 1.0 divided by the number of persons in the document (-1)
+Using <b>namesWeighted.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA with normalized edge weights. The weight is calculated as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. The edge weight between the persons if the sum of these results.
+***Tero: eikö niin, että names.csv ja namesWeighted.csv ovat täsmälleen sama tiedosto? Siinä tapauksessa voitaneen poistaa namesWeighted.csv?***
 
 Using <b>bimodal.csv</b> one gets a bimodal network with both documents and the individuals appearing in them.
 

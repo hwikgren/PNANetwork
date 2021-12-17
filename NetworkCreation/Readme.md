@@ -5,7 +5,6 @@ There are three different versions of the network, two one-mode networks and a t
 Using <b>names.csv and connections.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The weight of an edge equals the number of times two persons co-occur in different documents.
 
 Using <b>names.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The edge weights in this network have been normalized as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. To calculate the edge weight, add up the weights in all the documents.
-***Tero: eikö niin, että names.csv ja namesWeighted.csv ovat täsmälleen sama tiedosto? Siinä tapauksessa namesWeighted.csv lienee tarpeeton?***
 
 Using <b>bimodal.csv</b> one can create a two-mode network of documents and the individuals appearing in them.
 
@@ -22,10 +21,10 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 	* _../Lists/KingsSaao_ is a list extracted from the Oracc SAAo project metadata (subprojects 1, 4, 5, 17, 18, 19, 21). If the king, during whose reign a letter is written, is mentioned in the metadata as the sender or recipient of the letter, he is connected to this document.
 	* _../Lists/SAAKings_ contains a list connecting kings to the SAA project texts that relate to the king even if he is not explicitly mentioned (SAAo projects 8, 9, 10, 12, 13, 15, 16)
 
-2. From the 'names' treemap, collect all the documents and the individuals mentioned in them to treemap called 'reversed' (= reverse the network) 
+2. From the 'names' treemap (individuals and all the document they are mentioned in), collect all the documents and the individuals mentioned in them to treemap called 'reversed' (= reverse the network) 
 * = Bimodal network
 
-3. From 'reversed' treemap, find pairs of individuals appearing in the same document 
+3. From 'reversed' treemap (all the documents and the individuals who are mentioned in them), find pairs of individuals appearing in the same document 
 * but only if the document contains more than one individual
 * = one-mode network
 * Give weight to each connection between two individuals: 

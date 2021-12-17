@@ -55,15 +55,16 @@ origins
 * If the description of an individual is the second line (without the number (= frequency)), use the first line as the Ethnicity attribute in the network
 
 pdfAsText
-***Tero: kuvaus puuttuu***
+***Tero: tämä tiedosto pitänee poistaa tekijänoikeussyistä. Toimisiko tämänkin kohdalla se, että otetaan siitä lyhyt pätkä esimerkiksi?***
 
 places
-* List of allowed place names
-* E.g. 	+Arbunâ
+* List of allowed place names; used also for standardizing the variants
+* E.g.,
+* +Arbunâ
 * +Argasu
 * Argusu
-* If a place name that has '+' sign in our list is found in the profession, assign that place to the individual
-* If a name that has no '+' sign in our list is found in the profession, assign the previous place with '+' to the individual
+* If a place name that has '+' sign in our list is found in the PNA description on an individual, use that place as the person's Place attribute in the network
+* If a name that has no '+' sign in our list is found in the PNA description of an individual, use the previous place with '+' as the person's Place attribute in the network
 
 professionCategory
 * List of raw PNA descriptions of people's professions that correspond to broader categories
@@ -71,7 +72,7 @@ professionCategory
 * E.g.,
 * +Military personnel
 * 1 Leader of a group of archers from Nineveh
-* If the profession/description of an individual is the second line, use the first line as the Profession category in the network
+* If the profession/description of an individual is the second line (without the number (= frequency)), use the first line as the Profession attribute in the network
 
 SAAKings
 * A list compiled by us connecting kings to the SAA project texts that relate to the king even if he is not be explicitly mentioned
@@ -81,10 +82,13 @@ SAAKings
 
 sameText.txt
 * Our first list of documents that are in fact the same although they have different names
-* E.g. ZA 73 10 == AfO 32 38 use the latter one instead of the first designation
+* E.g., ZA 73 10 == AfO 32 38
+* Use the latter designation instead of the first one
 
 timeperiods
-* List of dating attributes that correspond to shorter dating with years
-* E.g. +668-600 Assurbanipal and/or later
+* List of raw PNA descriptions of the period when a person is attested, corresponding to broader categories that also include exact years
+* E.g.,
+* +668-600 Assurbanipal and/or later
 * 1 7th century probably reign of Assurbanipal or later
-* If the dating of an individual is the second line, use the first line as date
+* If the dating of an individual is the second line (without the number (= frequency)), use the first line as the Time attribute in the networks
+***Tero: tämän timeperiods-tiedoston alusta voisi poistaa suomenkielisen kommenttirivin***

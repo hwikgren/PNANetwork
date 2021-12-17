@@ -33,7 +33,7 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 	* For each name in the pairs
 		* Get a Profession attribute for the individuals from our list _../Lists/knownProffs_
 			* The list has been compiled using Lists/professionCategory and semi-automatically assigning the raw PNA descriptions to the category that contains similar descriptions
-		* Get an Ethnicity attribute for the individuals
+		* Get the Ethnicity attribute for the individuals
 			* If the raw PNA description is in our list of ethnicities (_../Lists/origins_)
 				* use the Ethnicity category there
 			* Else, individuals get 'Unknown' as the Ethnicity attribute
@@ -42,16 +42,17 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 				* If that place name is in our list of real places (and their normalizations), i.e. _../Lists/places_
 					* use it
 				* Else use the first word in the description which is in our list of real places if any
-		* Get dating of the individual
-			* Correct obvious mistakes in the dating in PNA (e.g. latereign > late reign, probab-ably > probably, etc.)
-			* standardise dating in PNA (e.g. eighth > 8th, Sargon II > reign of Sargon II, etc.)
-			* find the normalised dating in our list of timeperiods (_../Lists/timeperiods_)
-				* use that for the dating of the individual
-		* Give number for each individual and save that in a treemap called nodes
-		* Write the information on each individual to file called names.csv
-	* For each pair in the pairs found together in at least one document
-		* get the number of each individual in the pair from the nodes treemap
-		* write the number of both individuals + the summed weight of their connections to file called connections.csv
+		* Get the Time attribute for the individuals
+			* Correct obvious mistakes in the dating in PNA (e.g., latereign > late reign, probab-ably > probably, etc.)
+			* Standardize the dating in PNA (e.g., eighth > 8th, Sargon II > reign of Sargon II, etc.)
+			* Find the normalized dating in our list of time periods (_../Lists/timeperiods_)
+				* use that for the Time attribute of the individual
+		* Give an id number for each individual and save that in a treemap called 'nodes'
+		* Write the information on each individual to a file called 'names.csv'
+	* For each pair of individuals found together at least in one document
+		* Get the id number of both individuals from the 'nodes' treemap
+		* Write the number of both individuals + the summed weight of their connections to file called connections.csv
+***Tero: Voisitko tarkentaa tähän vielä sen, miten normalisoidut/normalisoimattomat connections-tiedostot tuotetaan? Nyt puhutaan vain connections.csv-tiedostosta niin kuin se olisi normalisoitu tiedosto.***
 
 4. Write other infomation to files
 * write the names of individuals and the names of the documents they appear in to the file Output/allNamesWithDocs

@@ -1,19 +1,17 @@
-EXTRACTING TEXT FROM THE PDF-FILE (PNA_3_2.pdf)
+EXTRACTING TEXT FROM THE PDF FILE (PNA 3/II)
 
-1. Open the pdf-file in Safari (other browsers Firefox and Chrome were tried, but did not maintain text formatting)
+1. Open the pdf file in Safari (the Firefox and Chrome browers were tried, but they did not maintain text formatting)
 2. Copy all text to Word (text formatting was maintained but typeface not)
-	- Remove by hand the page headers and footers
+	- Remove page headers and footers manually
 	- With find-and-replace, add '*' to the beginning of lines starting with bold text (i.e. the names of persons)
-	- With find-and-replace, add '<<' to the beginning of lines with font size 9 (name of the person who added the persons to the database)
-	- Remove line break, by hand, when line end in full stop but the sentence does not end
-3. Save file as rdf
-5. Open file with TextEdit
-	- Remove (automatically) linebreaks when line does not end with full stop
-	- Move around, by hand, text snippets that ended in wrong place when two columns in pdf were transformed to one column
-	- make sure "nameline" is all one line and description of each person is one line
+	- With find-and-replace, add '<<' to the beginning of lines with font size 9 (name of the person who wrote the PNA entry)
+	- Remove line breaks manually when a line ends in full stop but the sentence does not end
+3. Save the file as rtf
+5. Open the file with TextEdit
+	- Remove linebreaks (automatically) when a line does not end with full stop
+	- Move around, by hand, text snippets that ended up in a wrong place when two columns in the pdf file were transformed to one column
+	- make sure that the "name line" is a single line of text and the description of each individual is a single line of text
 
-The resulting text file: ../Lists/pdfAsText
-
-This process took a lot of manual work and small corrections to the text file have been made many times!
+This process took a lot of manual work, and small corrections to the text file have been made many times!
 
 Cannot be reproduced!

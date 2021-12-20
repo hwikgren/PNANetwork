@@ -7,7 +7,7 @@ EXTRACTING TEXT FROM THE PDF FILE (PNA 3/II)
 	- With find-and-replace, add '<<' to the beginning of lines with font size 9 (name of the person who wrote the PNA entry)
 	- Remove line breaks manually when a line ends in full stop but the sentence does not end
 3. Save the file as rtf
-5. Open the file with TextEdit
+4. Open the file with TextEdit
 	- Remove linebreaks (automatically) when a line does not end with full stop
 	- Move around, by hand, text snippets that ended up in a wrong place when two columns in the pdf file were transformed to one column
 	- make sure that the "name line" is a single line of text and the description of each individual is a single line of text

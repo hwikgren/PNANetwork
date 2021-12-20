@@ -34,14 +34,14 @@ more information
 	* From the first line and from all the lines starting with a number and full stop
 		* get the description and dating of the individual
 	* If a line starts with a number 
-		* replace the _1 at the end of the name with _*number*
+		* replace the \_1 at the end of the name with \_*number*
 		* but if the number indicates several persons (e.g., 3.-5.) continue until an individual is found or the section of the name ends
-	* add new individual to the list of persons
-	* if first line of a paragraph contains words dating/Date formula/in dates/eponym etc.
+	* Add a new individual to the list of persons
+	* If the first line of a paragraph contains words dating/Date formula/in dates/eponym etc.
 		* ignore until next paragraph which
 			* starts in similar fashion (e.g. if 1'. until 2'.)
 			* or is hierarchically higher (the order is 1. a. 1'. a'., see textfileExample.txt) 
-	* if line starts with '@@'
+	* If line starts with '@@'
 		* get the document name corresponding to the line from the list produced with PNATextExtractor.java and imported in texts.ser)
 		* add the document name to the documents of the individual
 

@@ -11,9 +11,9 @@
 <b>docsInTextfiles</b>: the final normalized names of documents found in the PNA text files
 * used in PNAPdfNameExtractor.java
 
-<b>individualsInPdffile</b>: all the information of each individual who appears in at least 1 document according to the pdf file
+<b>individualsInPdffile</b>: a list of all individuals who appear at least in one document according to the PNA pdf file, including their raw metadata and the documents they are mentioned in
 
-<b>individualsInTextfiles</b>: all the information of each individual who appears in at least 1 document according to the text files
+<b>individualsInTextfiles</b>: a list of all individuals who appear at least in one document according to the PNA text files, including their raw metadata and the documents they are mentioned in
 
 <b>pairs</b>: the network of individuals connected through appearing in the same document(s) with the weight of their connection
 * the weight of each connection of a pair is calculated by summing up the number of documents the two persons forming the pair appear together

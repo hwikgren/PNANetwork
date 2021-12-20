@@ -27,6 +27,6 @@
 * does not contain the node attributes
 * a line with Source;Target;Weight has to be added to the beginning of the file in order to use it in Gephi.
 
-<b>textsWithOriginals</b>: the final normalised name for each original line in text files with the original line
+<b>textsWithOriginals</b>: a list of normalized text names and the original data (a full line) in the PNA text files
 * this information is also saved in the binary file texts.ser and used in PNANameExtractor.java
 

@@ -21,21 +21,21 @@ more information
 
 <<Name of the scholar who wrote the PNA entry
 ```
-#### The procedure of finding individuals from text files
+#### The procedure of finding individuals in the text files
 
-1. Iterate thought the text files
-* Get name from line starting with '*'
+1. Iterate through the text files
+* Get a name from line starting with '*'
 	* convert letters from ascii to unicode according to our list (Lists/letterConversion)
-	* add '_1' to the name
-* Find the next line with infos divided by ';'
+	* add '_1' after the name
+* Find the next line with pieces of information divided by ';'
 	* clean inconsistences
-	* Get language and gender of the name
-* Find next paragraph and iterate over lines until line starts with '<<' (or '>>'), i.e. section of the name ends
-	* From the first line and from all lines starting with number and full stop
+	* get the language and gender of the name
+* Find the next paragraph and iterate over lines until a line starts with '<<' (or '>>'), i.e. the section of the name ends
+	* From the first line and from all the lines starting with a number and full stop
 		* get the description and dating of the individual
-	* If lines starts with number 
+	* If a line starts with a number 
 		* replace the _1 at the end of the name with _*number*
-		* but if the number indicates several persons continue until an individual is found or the section of the name ends
+		* but if the number indicates several persons (e.g., 3.-5.) continue until an individual is found or the section of the name ends
 	* add new individual to the list of persons
 	* if first line of a paragraph contains words dating/Date formula/in dates/eponym etc.
 		* ignore until next paragraph which

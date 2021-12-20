@@ -1,5 +1,7 @@
 ### Find names and documents in the pdf file
 
+For further details of the procedure, see the commented code in src/PNAPdfNameExtractor.java.
+
 The last volume of PNA (3/II) was not available to us as a text file. The individuals and the documents they appear in have been extracted from a text file made from a pdf file of the volume.
 * For the details of extracting the text from the pdf file, see the file pdfTextExtraction.txt.
 
@@ -10,6 +12,7 @@ short description/profession (dating): longer description with document names in
       - Can start with a number (e.g., 3.), if there are several individuals with the same name 
 <<scholar who wrote the PNA entry>>.
 ```
+
 1. Make a "database" of all known document names in the PNA text files, including the ones in the concordance lists
 * Read _../Output/docsInTextfiles_ and _../Output/allDuplicates_
 	* The first word of the name is the key

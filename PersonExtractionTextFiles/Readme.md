@@ -23,6 +23,8 @@ more information
 ```
 #### The procedure for finding individuals in the text files
 
+Further details can be found in the commented code in src/PNANameExtractor.java.
+
 1. Iterate through the text files
 * Get a name from a line starting with '*'
 	* convert letters from ASCII to Unicode according to our list (_..Lists/letterConversion_)

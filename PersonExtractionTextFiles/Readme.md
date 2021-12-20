@@ -3,7 +3,7 @@
 The format of the text files is:
 ```
 *Name
-(translation of name); language of name; gender;
+(translation of the name); language of the name; gender;
 information on the name (can span several lines)
 
 Profession (time period when lived): 
@@ -21,10 +21,10 @@ more information
 
 <<Name of the scholar who wrote the PNA entry
 ```
-#### The procedure of finding individuals in the text files
+#### The procedure for finding individuals in the text files
 
 1. Iterate through the text files
-* Get a name from line starting with '*'
+* Get a name from a line starting with '*'
 	* convert letters from ascii to unicode according to our list (Lists/letterConversion)
 	* add '_1' after the name
 * Find the next line with pieces of information divided by ';'

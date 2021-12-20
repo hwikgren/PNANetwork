@@ -53,10 +53,10 @@ Further details can be found in the commented code in src/PNANameExtractor.java.
 * Save a list of individuals with their information and names of the documents they appear in into a binary file called textFileNames.ser
 * Write individuals with all their information to the file _..Output/individualsInTextfiles_
 
-**Takes as input the folder where the text files are**
+**PNANameExtractor.java takes as input the folder where the text files are**
 * Assumes a binary file with the name texts.ser
 	* contains the document names with the line they were found in using PNATextExtractor.java
 	* the file should be in the folder where the PNANameExtractor.java is started from
 		* can here be found in folder _../DocumentNameExtraction/_
 * Assumes a file called Lists/letterConversion
-	* the script should be started from the folder where the Lists folder is
+	* NANameExtractor.java should be started from the folder where the Lists folder is

@@ -1,14 +1,14 @@
 ### Lists produced during the various stages of creating the network 
 #### ...and sometimes used in a following stage
 
-<b>allDocsWithIndividuals</b>: a list of all documents (in text files and the pdf file) with the names of the individuals mentioned in them
+<b>allDocsWithIndividuals</b>: a list of all documents referring to at least two persons (in the text files and pdf file) with the names of the individuals mentioned in them
 
-<b>allDuplicates</b>: a list of all duplicate document names from our lists and found in PNA text files (from Oracc only SAAo project duplicate names)
-* used in PNANameExtractor.java
+<b>allDuplicates</b>: a list of all duplicate document names in our lists and found in the PNA text files (only the SAAo project duplicate names are taken from the Oracc metadata)
+* used in PNANameExtractor.java ***Tero: vai PNAPdfNameExtractor.java?***
 
-<b>allNamesWithDocs</b>: a list of all names of individuals (in text files and the pdf file) with their metadata and the documents they are mentioned in
+<b>allNamesWithDocs</b>: a list of all individuals (in the text files and pdf file) with their raw PNA metadata and the documents they are mentioned in
 
-<b>docsInTextfiles</b>: the final normalised names of documents found in the text files
+<b>docsInTextfiles</b>: the final normalized names of documents found in the PNA text files
 * used in PNAPdfNameExtractor.java
 
 <b>individualsInPdffile</b>: all the information of each individual who appears in at least 1 document according to the pdf file

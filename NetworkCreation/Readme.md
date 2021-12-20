@@ -4,7 +4,7 @@ There are three different versions of the network, two one-mode networks and a t
 
 Using <b>names.csv and connections.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The weight of an edge equals the number of times two persons co-occur in different documents.
 
-Using <b>names.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The edge weights in this network have been normalized as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. To calculate the edge weight, add up the weights in all the documents.
+Using <b>names.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The edge weights in this network have been calculated as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. To calculate the edge weight, add up the weights in all the documents.
 
 Using <b>bimodal.csv</b> one can create a two-mode network of documents and the individuals appearing in them.
 
@@ -30,7 +30,7 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 * Give a weight to each connection between two individuals: 
 	* there are two alternative ways of calculating the weight
 		* the simple way is to count all the documents in which both individuals are mentioned
-		* in order to alleviate the impact of false connections between people who had nothing to do with each other but just happened to be mentioned in the same text (e.g., a long list of names), the weight can be normalized by giving less weight to connections found in documents with many people:
+		* in order to alleviate the impact of false connections between people who had nothing to do with each other but just happened to be mentioned in the same text (e.g., a long list of names), the weight can be calculated by giving less weight to connections found in documents with many people:
 			* dividing 1 by the number of individuals in the document -1 \[1/(n-1)]
 	* If the same pair appears in another document, sum up the weights
 	* For each name in the pairs
@@ -56,14 +56,14 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 		* Write the information on each individual to a file called 'names.csv'
 	* For each pair of individuals found together at least in one document
 		* Get the id number of both individuals from the 'nodes' treemap
-		* Write the number of both individuals + the summed weight of their connections to file called connections.csv
+		* Write the id numbers of both individuals + the summed weight of their connections to a file called connections.csv
 
 4. Write other infomation to files
 * Write the names of individuals and the names of the documents they appear in to the file Output/allNamesWithDocs
 * Write all documents with at least 2 individuals and the names of the persons to Output/allDocsWithIndividuals
 * Write the pairs of people who appear in the same documents
 	* with an edge weight that equals the number of their co-occurrences (Output/pairs)
-	* with normalized edge weights (Output/pairsWeighted)
+	* with edge weights that take the number of persons in a document into account (Output/pairsWeighted)
 * Optionally, make a simple csv file of document-individual pairs (biModal.csv)
 
 

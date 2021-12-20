@@ -19,12 +19,12 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
    	* save the data to a treemap called 'names'
 * From our lists, add the SAA documents to the documents of kings
 	* _../Lists/KingsSaao_ is a list extracted from the Oracc SAAo project metadata (subprojects 1, 4, 5, 17, 18, 19, 21). If the king, during whose reign a letter is written, is mentioned in the metadata as the sender or recipient of the letter, he is connected to this document.
-	* _../Lists/SAAKings_ contains a list connecting kings to the SAA project texts that relate to the king even if he is not explicitly mentioned (SAAo projects 8, 9, 10, 12, 13, 15, 16)
+	* _../Lists/SAAKings_ contains a manually collected list connecting kings to the SAA project texts that relate to the king even if he is not explicitly mentioned (SAAo projects 8, 9, 10, 12, 13, 15, 16)
 
-2. From the 'names' treemap (individuals and all the document they are mentioned in), collect all the documents and the individuals mentioned in them to treemap called 'reversed' (= reverse the network) 
-* = Bimodal network
+2. From the 'names' treemap (individuals and all the documents they are mentioned in), collect all the documents and the individuals mentioned in them to a treemap called 'reversed' (= reverse the network) 
+* = two-mode network
 
-3. From 'reversed' treemap (all the documents and the individuals who are mentioned in them), find pairs of individuals appearing in the same document 
+3. From the 'reversed' treemap (all the documents and the individuals who are mentioned in them), find pairs of individuals appearing in the same document 
 * but only if the document contains more than one individual
 * = one-mode network
 * Give weight to each connection between two individuals: 

@@ -25,7 +25,7 @@ more information
 
 1. Iterate through the text files
 * Get a name from a line starting with '*'
-	* convert letters from ascii to unicode according to our list (Lists/letterConversion)
+	* convert letters from ASCII to Unicode according to our list (_..Lists/letterConversion_)
 	* add '_1' after the name
 * Find the next line with pieces of information divided by ';'
 	* clean inconsistences
@@ -34,22 +34,22 @@ more information
 	* From the first line and from all the lines starting with a number and full stop
 		* get the description and dating of the individual
 	* If a line starts with a number 
-		* replace the _1 at the end of the name with _number
-		* but if the number indicates several persons (e.g., 3.-5.) continue until an individual is found or the section of the name ends
+		* replace the _1 at the end of the name with _*number*
+		* but if the number indicates several persons (e.g., 3.-5.) continue until a single number is found or the section of the name ends
 	* Add a new individual to the list of persons
 	* If the first line of a paragraph contains words 'dating'/'Date formula'/'in dates'/'eponym,' etc. (the person is attested as an eponym in a dating formula)
 		* ignore until the next paragraph which
 			* is hierarchically on the same level (e.g., if 1'. then ignore until 2'.)
-			* or is hierarchically higher (the order is 1. a. 1'. a'., see _../DocumentNameExtraction/textfileExample.txt_) 
+			* or is hierarchically higher (the order is 1./a./1'./a'., see _../DocumentNameExtraction/textfileExample.txt_)
 	* If a line starts with '@@'
-		* get the document name corresponding to the line from the list produced with PNATextExtractor.java and imported in texts.ser)
+		* get the document name corresponding to the line from the list produced with PNATextExtractor.java and imported in texts.ser
 		* add the document name to the documents of the individual
 
 2. Remove individuals without any valid documents
 	 
 3. Save information
 * Save a list of individuals with their information and names of the documents they appear in into a binary file called textFileNames.ser
-* Write individuals with all their information to a file called Output/individualsInTextfiles
+* Write individuals with all their information to the file _..Output/individualsInTextfiles_
 
 **Takes as input the folder where the text files are**
 * Assumes a binary file with the name texts.ser

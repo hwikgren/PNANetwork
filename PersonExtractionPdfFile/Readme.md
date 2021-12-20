@@ -65,15 +65,16 @@ short description/profession (dating): longer description with document names in
 			* Continue from the following word
 3. Save the information 
 * Write a treemap with individuals and their info + names of the documents they appear in to a binary file called pdfNames.ser
-* Write a list of individuals with their info + names of documents they appear in to a file called _..Output/individualsInPdffile_
+* Write a list of individuals with their info + names of the documents they appear in to a file called _..Output/individualsInPdffile_
 
 The script assumes 
-* a folder named Lists with the following files:
+* a folder called Lists with the following files:
      * letterConversion
      * MAss_Radner_conversion
-* a folder named Output with the following files produced with PNATextExtractor.java and PNANameExtractor.java:
+* a folder called Output with the following files produced with PNATextExtractor.java and PNANameExtractor.java:
      * docsInTextfiles
      * allDuplicates
+     * ***Tero: eikö PNATextExtractor.java tuota nämä molemmat? Puuttuuko listalta jokin PNANameExtractor.javan tuottama tiedosto?***
 
 There is an option of writing only the document names found in the pdf file to the file _../Output/docsInPdffile_
 * the file can be found in this folder

@@ -56,10 +56,10 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 		* Write the information on each individual to a file called 'names.csv'
 	* For each pair of individuals found together at least in one document
 		* Get the id number of both individuals from the 'nodes' treemap
-		* Write the id numbers of both individuals + the summed weight of their connections to a file called connections.csv
+		* Write the id numbers of both individuals + the summed weight of their connections to a file called connections.csv (the weight equals the number of co-occurrences or weighted co-occurrences, depending on what was chosen above)
 
 4. Write other infomation to files
-* Write the names of individuals and the names of the documents they appear in to the file Output/allNamesWithDocs
+* Write the names of individuals, their raw PNA data, and the names of the documents they appear in to the file Output/allNamesWithDocs
 * Write all documents with at least 2 individuals and the names of the persons to Output/allDocsWithIndividuals
 * Write the pairs of people who appear in the same documents
 	* with an edge weight that equals the number of their co-occurrences (Output/pairs)

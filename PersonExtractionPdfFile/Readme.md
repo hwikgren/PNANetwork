@@ -35,34 +35,34 @@ short description/profession (dating): longer description with document names in
 			(separated by ':' from the rest of the line)
 		 * If the line starts with a number, change the number of the name to that number
 	*  For each line
-		* If the beginning of line (before ':') contains words 'dating'/'Date formula'/'in dates'/'eponym,' etc. (the person is attested as an eponym in a dating formula)
+		* If the beginning of the line (before ':') contains the words 'dating'/'Date formula'/'in dates'/'eponym,' etc. (the person is attested as an eponym in a dating formula)
 			* Ignore the line
-		* Else iterate word by word the line after ':' 
+		* Else, iterate word by word the line after ':' 
 			* If the word is 'Radner'
 				* If 'word + next word' are found in our MAss_Radner_conversion list
 					* Add the MAss name to the documents of the individual
-			* Else, if the word is a key in the document "database"
+			* Else, if the word is a key in the "database" of document names
 				* Consider only the rest of the line after that word
 					* Cut from the line the part that cannot be part of a document name
 				* From the snippet that is left, take the beginning of the snippet up to the length of the longest document name starting with that word
 				* If the snippet is in our duplicates treemap
 					* Change the snippet to the duplicate name instead
-				* If the snippet is among the variants of the word/key
+				* If the snippet is among the variants of the key
 					* Add it to the documents of the individual
 					* If the individual is not yet in the list of persons
 						* Add a new individual with his/her info
 			* Else
 				* Make a thumbprint of the snippet 
-					* Compare that to the thumbprints of the document names in the text files
-					* If a matching thumbprint was found
+					* Compare the thumbprint to the thumbprints of the document names in the text files
+					* If a matching thumbprint is found
 						* Extract the length of that thumbprint from the snippet 
 						* Add it to the documents of the individual
 						* If the individual is not yet in the list of persons
 							* Add a new individual with his/her info
 				* If not found, leave out the last word of the snippet
-					* Repeat until a matching document name is found or the all words in the 
+					* Repeat until a matching document name is found or all the words in the 
 					snippet have been iterated over
-			* Continue from the following word
+		* Continue from the following word
 3. Save the information 
 * Write a treemap with individuals and their info + names of the documents they appear in to a binary file called pdfNames.ser
 * Write a list of individuals with their info + names of documents they appear in to a file called _..Output/individualsInPdffile_

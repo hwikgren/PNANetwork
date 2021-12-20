@@ -2,7 +2,7 @@
 
 For further details of the procedure, see the commented code in src/PNAPdfNameExtractor.java.
 
-The last volume of PNA (3/II) was not available to us as a text file. The individuals and the documents they appear in have been extracted from a text file made from a pdf file of the volume.
+The last volume of PNA (3/II) was not available to us as a text file. The individuals and the documents they appear in have been extracted from a text file converted from a pdf file of the volume.
 * For the details of extracting the text from the pdf file, see the file pdfTextExtraction.txt.
 
 The form of the text file transformed from the pdf file:
@@ -10,20 +10,20 @@ The form of the text file transformed from the pdf file:
 *name (translation of the name); language of the name; gender of the name; wr. transliteration.
 short description/profession (dating): longer description with document names in running text
       - Can start with a number (e.g., 3.), if there are several individuals with the same name 
-<<scholar who wrote the PNA entry>>.
+<<the name of the scholar who wrote the PNA entry>>.
 ```
 
-1. Make a "database" of all known document names in the PNA text files, including the ones in the concordance lists
+1. Create a "database" of all known document names in the PNA text files, including the ones in the concordance lists
 * Read _../Output/docsInTextfiles_ and _../Output/allDuplicates_
-	* The first word of the name is the key
-		* all document names starting with the key are variants of that key
-		* record the length of the longest variant
+	* The first word of the document name is the key
+		* All document names starting with the key are variants of that key
+		* Record the length of the longest variant
 	* Duplicates are also added to a treemap called 'duplicates'
 	* A thumbprint is made of all document names and added to the list of thumbprints
-	  * thumbprints are made by replacing numbers with 1 and spaces with _ ***Tero: thumbprinteissä näkyi myös isoja ja pieniä x-kirjaimia. Korvaavatko ne aakkosia, jotka liitetään numerosarjan perään?***
+	  * Thumbprints are made by replacing numbers with 1 and spaces with _ ***Tero: thumbprinteissä näkyi myös isoja ja pieniä x-kirjaimia. Korvaavatko ne aakkosia, jotka liitetään numerosarjan perään?***
 	  * Eg., SAA 14 123 > SAA_11_111
 * Read the Radner (forthcoming) conversion list to MAss names (_../Lists/Mass_Radner_conversion_)
-  * the names are added to a treemap called 'MAss'
+  * The names are added to a treemap called 'MAss'
 2. Iterate through the text file converted from pdf
 * Get a name from a line starting with '*'
 	* Convert letters from ASCII to Unicode according to our list (_../Lists/letterConversion_)

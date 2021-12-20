@@ -34,27 +34,27 @@ more information
 	* From the first line and from all the lines starting with a number and full stop
 		* get the description and dating of the individual
 	* If a line starts with a number 
-		* replace the \_1 at the end of the name with \_*number*
+		* replace the _1 at the end of the name with _*number*
 		* but if the number indicates several persons (e.g., 3.-5.) continue until an individual is found or the section of the name ends
 	* Add a new individual to the list of persons
-	* If the first line of a paragraph contains words dating/Date formula/in dates/eponym etc.
-		* ignore until next paragraph which
-			* starts in similar fashion (e.g. if 1'. until 2'.)
-			* or is hierarchically higher (the order is 1. a. 1'. a'., see textfileExample.txt) 
-	* If line starts with '@@'
+	* If the first line of a paragraph contains words 'dating'/'Date formula'/'in dates'/'eponym,' etc. (the person is attested as an eponym in a dating formula)
+		* ignore until the next paragraph which
+			* is hierarchically on the same level (e.g., if 1'. then ignore until 2'.)
+			* or is hierarchically higher (the order is 1. a. 1'. a'., see _../DocumentNameExtraction/textfileExample.txt_) 
+	* If a line starts with '@@'
 		* get the document name corresponding to the line from the list produced with PNATextExtractor.java and imported in texts.ser)
 		* add the document name to the documents of the individual
 
-2. Remove individuals with no valid documents
+2. Remove individuals without any valid documents
 	 
 3. Save information
-* Save list of individuals with their info and names of documents they appear into a binary file called textFileNames.ser
-* Write names with all their information to a file called Output/individualsInTextfiles
+* Save a list of individuals with their information and names of the documents they appear in into a binary file called textFileNames.ser
+* Write individuals with all their information to a file called Output/individualsInTextfiles
 
 **Takes as input the folder where the text files are**
 * Assumes a binary file with the name texts.ser
-	* contains the document names with the line they were found on with PNATextExtractor.java
+	* contains the document names with the line they were found in using PNATextExtractor.java
 	* the file should be in the folder where the PNANameExtractor.java is started from
-		* can here be found in folder _../DocumentNameExtraction/_
+		* can here be found in folder _../DocumentNameExtraction/src/_
 * Assumes a file called Lists/letterConversion
 	* the script should be started from the folder where the Lists folder is

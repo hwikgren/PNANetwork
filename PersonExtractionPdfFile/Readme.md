@@ -1,14 +1,14 @@
-### Find names and documents in the pdf-file (Lists/pdfAsText)
+### Find names and documents in the pdf file
 
-The last volume of the Prosopography of the Neo-Assyrian Empire, e.g. volume 3/II is not available as a text file. The individuals and the documents they appear in in this this particular volume have been extracted from a text file made from a pdf-file of the volume.
+The last volume of PNA (3/II) was not available to us as a text file. The individuals and the documents they appear in have been extracted from a text file made from a pdf file of the volume.
 * For the details of extracting the text from the pdf file see the file pdfTextExtraction.txt.
 
-The form of the file:
+The form of the text file transformed from the pdf file:
 ```
-*name (translation of name); language of name; gender of name; wr. transliteration.
+*name (translation of the name); language of the name; gender of the name; wr. transliteration.
 short description/profession (dating): longer description with document names in running text
-      - Can start with a number (e.g. 3.), if there are several individuals with the same name 
-<<scholar who added to database>>.
+      - Can start with a number (e.g., 3.), if there are several individuals with the same name 
+<<scholar who wrote the PNA entry>>.
 ```
 1. Make a "database" of all known document names, including the ones in the concordance list
 * Read _../Output/docsInTextfiles_ and _../Output/allDuplicates_

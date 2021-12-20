@@ -27,10 +27,10 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 3. From the 'reversed' treemap (all the documents and the individuals who are mentioned in them), find pairs of individuals appearing in the same document 
 * but only if the document contains more than one individual
 * = one-mode network
-* Give weight to each connection between two individuals: 
+* Give a weight to each connection between two individuals: 
 	* there are two alternative ways of calculating the weight
-		* the simple way is to count all the documents both the individuals are mentioned in
-		* in order to alleviate false connections between people who had nothing to do with each other but just happened to be mentioned in the same text with, for example, a long list of names, the weight can be normalised by giving less value to connections found in such documents by:
+		* the simple way is to count all the documents in which both individuals are mentioned
+		* in order to alleviate the impact of false connections between people who had nothing to do with each other but just happened to be mentioned in the same text (e.g., a long list of names), the weight can be normalized by giving less weight to connections found in documents with many people:
 			* dividing 1 by the number of individuals in the document -1 \[1/(n-1)]
 	* If the same pair appears in another document, sum up the weights
 	* For each name in the pairs

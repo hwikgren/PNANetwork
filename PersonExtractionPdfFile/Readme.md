@@ -51,18 +51,18 @@ short description/profession (dating): longer description with document names in
 					* Add it to the documents of the individual
 					* If the individual is not yet in the list of persons
 						* Add a new individual with his/her info
-			* Else
-				* Make a thumbprint of the snippet 
-					* Compare the thumbprint to the thumbprints of the document names in the text files
-					* If a matching thumbprint is found
-						* Extract the length of that thumbprint from the snippet 
-						* Add it to the documents of the individual
-						* If the individual is not yet in the list of persons
-							* Add a new individual with his/her info
-				* If not found, leave out the last word of the snippet
-					* Repeat until a matching document name is found or all the words in the 
+				* Else
+					* Make a thumbprint of the snippet 
+						* Compare the thumbprint to the thumbprints of the document names in the text files
+						* If a matching thumbprint is found
+							* Extract the length of that thumbprint from the snippet 
+							* Add it to the documents of the individual
+							* If the individual is not yet in the list of persons
+								* Add a new individual with his/her info
+					* If not found, leave out the last word of the snippet
+						* Repeat until a matching document name is found or all the words in the 
 					snippet have been iterated over
-		* Continue from the following word
+			* Continue from the following word
 3. Save the information 
 * Write a treemap with individuals and their info + names of the documents they appear in to a binary file called pdfNames.ser
 * Write a list of individuals with their info + names of documents they appear in to a file called _..Output/individualsInPdffile_

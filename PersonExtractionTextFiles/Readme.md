@@ -1,4 +1,4 @@
-### Find names of individuals in the text files
+### Find names of individuals in the PNA text files
 
 The format of the text files is:
 ```
@@ -6,20 +6,20 @@ The format of the text files is:
 (translation of name); language of name; gender;
 information on the name (can span several lines)
 
-Profession (time period when lived) ;  
-	- Line starts with a number if several individuals with the same name, otherwise not
-		e.g. 3. Priest of Ninurta, in Kalhu:
-	- Can span over several lines
+Profession (time period when lived): 
+	- Line starts with a number if there are several individuals with the same name, otherwise not
+		e.g., 3. Priest of Ninurta, in Kalhu:
+	- Can span several lines
 Information on the individual     
-	- Can span over several lines
+	- Can span several lines
 @@Document name (year);
 more information
 @@Document name (year);
-	- This can go on for several paragraphs and be divided into numbered list 
-	which might be divided into list marked with letters etc. a. bla bla 1.' bla bla a.' bla bla
+	- This can go on for several paragraphs and be divided into a numbered list 
+	which might be divided into a list marked with letters, etc. (e.g., a. bla bla 1.' bla bla a.' bla bla)
 	- Can have duplicate names indicated by '=', e.g. @@89-4-26,209:13 = Streck (1916) 288 no. 13.
 
-<<Name of scholar who added to database
+<<Name of the scholar who wrote the PNA entry
 ```
 **The procedure of finding individuals from text files**
 

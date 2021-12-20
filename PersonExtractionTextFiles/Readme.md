@@ -34,7 +34,7 @@ more information
 	* From the first line and from all the lines starting with a number and full stop
 		* get the description and dating of the individual
 	* If a line starts with a number 
-		* replace the _*1* at the end of the name with _*number*
+		* replace the _1 at the end of the name with _number
 		* but if the number indicates several persons (e.g., 3.-5.) continue until an individual is found or the section of the name ends
 	* Add a new individual to the list of persons
 	* If the first line of a paragraph contains words 'dating'/'Date formula'/'in dates'/'eponym,' etc. (the person is attested as an eponym in a dating formula)

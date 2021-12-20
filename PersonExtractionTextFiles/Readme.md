@@ -57,6 +57,6 @@ Further details can be found in the commented code in src/PNANameExtractor.java.
 * Assumes a binary file with the name texts.ser
 	* contains the document names with the line they were found in using PNATextExtractor.java
 	* the file should be in the folder where the PNANameExtractor.java is started from
-		* can here be found in folder _../DocumentNameExtraction/src/_
+		* can here be found in folder _../DocumentNameExtraction/_
 * Assumes a file called Lists/letterConversion
 	* the script should be started from the folder where the Lists folder is

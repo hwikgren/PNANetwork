@@ -44,12 +44,14 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 			* Find possible names of places from the raw PNA descriptions (e.g., starts with a capital letter after 'of'/'from'/'in'/'active in'/'mayor of', etc.)
 				* If that place name is in our list of real places (and their normalizations), i.e. _../Lists/places_
 					* use it
-				* Else use the first word in the description which is in our list of real places if any
+				* Else, use the first word in the description which is in our list of real places if any
+				* Else, individuals get 'Unknown' as the Place attribute
 		* Get the Time attribute for the individuals
 			* Correct obvious mistakes in the dating in PNA (e.g., latereign > late reign, probab-ably > probably, etc.)
 			* Standardize the dating in PNA (e.g., eighth > 8th, Sargon II > reign of Sargon II, etc.)
 			* Find the normalized dating in our list of time periods (_../Lists/timeperiods_)
 				* use that for the Time attribute of the individual
+		* ***Tero: miten NameOrigin- ja Gender-tiedot tulevat csv-tiedostoon?***
 		* Give an id number for each individual and save that in a treemap called 'nodes'
 		* Write the information on each individual to a file called 'names.csv'
 	* For each pair of individuals found together at least in one document

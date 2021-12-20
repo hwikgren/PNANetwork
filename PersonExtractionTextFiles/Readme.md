@@ -1,4 +1,4 @@
-### Find names of individuals in the PNA text files
+### Find the names of individuals in the PNA text files
 
 The format of the text files is:
 ```
@@ -21,7 +21,7 @@ more information
 
 <<Name of the scholar who wrote the PNA entry
 ```
-**The procedure of finding individuals from text files**
+#### The procedure of finding individuals from text files
 
 1. Iterate thought the text files
 * Get name from line starting with '*'

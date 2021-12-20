@@ -57,6 +57,9 @@ origins
 pdfAsText
 ***Tero: tämä tiedosto pitänee poistaa tekijänoikeussyistä. Toimisiko tämänkin kohdalla se, että otetaan siitä lyhyt pätkä esimerkiksi?***
 
+personMetadata
+* List and explanation of metadata categories (attributes) given to each person in the network
+
 places
 * List of allowed place names; used also for standardizing the variants
 * E.g.,

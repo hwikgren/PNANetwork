@@ -1,7 +1,7 @@
 # PNA Network
 The data used for creating "A Social Network of the <i>Prosopography of the Neo-Assyrian Empire</i>"
 
-### A short explanation of the workflow and the contents of the repository
+### A short explanation of the workflow
 * The networks were created from the text and pdf file versions of the <i>Prosopography of the Neo-Assyrian Empire</i> (PNA)
 * Get document names from the PNA text files provided by Simo Parpola (Editor in Chief of PNA)
   * Use concordances to standardize the names
@@ -19,7 +19,7 @@ The data used for creating "A Social Network of the <i>Prosopography of the Neo-
 	* Write csv files of individuals and the connections between them
 	* <b>See the folder NetworkCreation for more details</b>
 
-### The folders
+### Contents of the repository
 
 <b>DocumentNameExtraction</b>: Document name extraction from the text files
 

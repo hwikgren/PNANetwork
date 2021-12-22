@@ -1,39 +1,57 @@
 # PNA Network
 The data used for creating "A Social Network of the <i>Prosopography of the Neo-Assyrian Empire</i>"
 
-### A short explanation of the workflow
-* The networks were created from the text and pdf file versions of the <i>Prosopography of the Neo-Assyrian Empire</i> (PNA)
-* Get document names from the PNA text files provided by Simo Parpola (Editor in Chief of PNA)
-  * Use concordances to standardize the names
-  * Save the name with the original line it was found in
-  * <b>See the folder DocumentNameExtraction for more details</b>
-* Find names and other info of individuals in the text files
-  * Find the documents in which an individual is mentioned by using the "original line - standardized name" conversion list produced in the previous step
-  * <b>See the folder PersonExtractionTextFiles for more details</b>
-* Find names and other info of individuals in the text file extracted from PNA_3_2.pdf
-	* Find documents using the list of document names in the text files + concordance lists
-	* ***Tero: tästä näyttäisi puuttuvan tieto siitä, miten yksilöt haetaan tiedostosta***
-	* <b>See the folder PersonExtractionPdfFile for more details</b>
-* Build a two-mode network of individuals and the documents they are attested in and a one-mode co-occurrence network of people attested in the same document
-	* For the one-mode network, find shorter/standardized versions of the language of a name, date, profession, ethnicity, and place 
-	* Write csv files of individuals and the connections between them
-	* <b>See the folder NetworkCreation for more details</b>
+The networks were created from the text and pdf file versions of the <i>Prosopography of the Neo-Assyrian Empire</i> (PNA). There are two different networks created from the same data. In the two-mode network, persons are connected to the texts in which they are attested. The one-mode network connects two persons if they are attested in the same document. A short explanation of the procedure of creating the networks is below.
+
+<b>In order to study and visualise the networks, it is sufficiant to download the file Networks.zip.</b> The other files in this repository contain more indepth explanations of the procedure of creating the networks, the normalisation lists used for that, and the output of different stages of the procedure.
 
 ### Contents of the repository
 
-<b>DocumentNameExtraction</b>: Document name extraction from the text files
+<b>DocumentNameExtraction</b>: The document name extraction from the text files
 
 <b>Lists</b>: Various lists used for extracting the names of documents and individuals and for creating the network
 
-<b>Network</b>:
+<b>Networks</b>: The networks as csv- and gexf-files that can be used for studying and visualising the networks
 
-<b>NetworkCreation</b>: Creating the network and writing csv files
+<b>NetworkCreation</b>: The creation of the networks and writing csv files
 
 <b>Output</b>: Lists produced during the various stages of creating the network
 
-<b>PersonExtractionPdfFile</b>: Finding names and documents in the pdf file
+<b>PersonExtractionPdfFile</b>: The finding of names and documents in the pdf file
 
-<b>PersonExtractionTextFiles</b>: Finding names and documents in the text files
+<b>PersonExtractionTextFiles</b>: The finding of names and documents in the text files
+
+### A short explanation of the workflow
+* Getting document names from the PNA text files provided by Simo Parpola (Editor in Chief of PNA)
+	* the document names are indicated with '@@' 
+  * Various lists of concordances to standardize the document names were used
+  * Each document name with the original line it was found in was saved for use in later steps
+  * <b>See the folder DocumentNameExtraction for more details</b>
+* Finding names and other info of individuals in the text files
+	* Names are indicated with '\*' before them and individuals with the same name have been numbered
+		* Individuals were given the number in PNA or 1 if only one individual has the specific name
+		* The number was added to the name with underscore, e.g. Aššūr-iddin_1
+	* The general description and dating of each individual as well as the language and gender of the name were also extracted
+  * The documents in which an individual is mentioned were extracted by using the "original line - standardized name" conversion list produced in the previous step
+  * <b>See the folder PersonExtractionTextFiles for more details</b>
+* Finding names and other info of individuals in the text file extracted from PNA_3_2.pdf
+	* As preprocessing the pdf-file was copied to Word and then turned into a text file and semimanually curated
+		* Names of individuals that in the pdf-file were marked with bold, were in Word marked with '\*'
+		* Mistakes caused by copying from two-columns to one were corrected by hand
+	* Individuals with the same name have been numbered and now names were indicated with '\*' before them 
+		* Individuals are given the number used in PNA or 1 if only one individual has the specific name
+		* The number is added to the name with underscore as in the previous step
+	* The general description and dating of each individual as well as the language and gender of the name were also extracted 
+	* Document names were found in the unstructured running text by using the list of document names in the text files + concordance lists
+	* <b>See the folder PersonExtractionPdfFile for more details</b>
+* Building a two-mode network of individuals and the documents they are attested in and a one-mode co-occurrence network of people attested in the same document
+	* For the one-mode network, shorter/standardized versions of the language of a name, date, profession, ethnicity, and place were produced using various normalisation lists (see folder Lists)
+	* Writing csv files (a = two-mode network, b and c together form the one-mode network)
+		1. of individuals and the documents they are attested in
+		2. of individuals with their metadata
+		3. of connections between the individuals in 2., the connections come from appearing in same documents
+	* <b>See the folder NetworkCreation for more details</b>
+
 
 ### Acknowledgements
 

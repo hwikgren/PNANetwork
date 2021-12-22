@@ -23,12 +23,12 @@ Further details can be found in the commented code in src/PNATextExtractor.java.
 * Correct obvious mistakes and inconsistences
 	* E.g., @@As 01319 R014 (636*) > As1319
 	* and Trade 1998 > Trade 2
-* If an obvious name is found, it is saved in a treemap called 'easyNames' ***Tero: mitä "obvious name" tarkoittaa?***
+* If it is clear where the document name ends and line number starts, the name part is saved in a treemap called 'easyNames' 
 	* all document names are saved in a treemap called 'texts' with the original line they were found from
-		* at this point, there might still be several versions of the same document ***Tero: Tarkoittaako tämä duplikaatteja, joilla on eri nimi?***
 
 2. Make thumbprints of the easily found names in 'easyNames'
-	* thumbprints are made by replacing numbers with 1 and spaces with _ ***Tero: thumbprinteissä näkyi myös isoja ja pieniä x-kirjaimia. Korvaavatko ne aakkosia, jotka liitetään numerosarjan perään?***
+	* thumbprints are made by replacing numbers with 1 and spaces with _
+		* trailing letters are replaced with x and +-signs with X
 	* Eg., SAA 14 123 > SAA_11_111
 
 3. Check all the document names in the 'texts' treemap again
@@ -56,8 +56,6 @@ The script assumes a folder called Output and writes to it (can be found in fold
 * _textsWithOriginals_: the normalized document name and the original line
 * _docsInTextfiles_: list of the normalized names of all found documents
 * _allDuplicates_: list of all possible duplicates included in our lists and found in PNA (including only the SAA texts from the list 'oraccConcordances')
-
-There is also an option to write the following lists to Output (the additional files can be found in this folder): ***Tero: olisiko loogisempaa laittaa nämäkin repon Output-kansioon? Nyt meni hetki ennen kuin tajusin, mistä ne löytyvät.***
 * _thumbprints_: list of the document names changed to thumbprints
 * _usedDuplicates_: list of all document names found in the text files with a normalized name for each
 	* form of the file: found name TAB used name

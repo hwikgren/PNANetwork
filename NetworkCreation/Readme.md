@@ -10,12 +10,12 @@ Using <b>bimodal.csv</b> one can create a two-mode network of documents and the 
 
 The files 'pairs' and 'pairsWeighted' can also each be used to create the one-mode networks. These files are also in the folder _../Networks_. The weights have been counted as in connections.csv and connectionsWeighted.csv respectively. These files can be used, for example, in Gephi, but they do not contain the node attributes.
 
-#### How our script creates the network data and writes csv files
+#### THE WORKFLOW of creating the networks
 
 Further details can be found in the commented code in src/PNACreateNetwork.java.
 
 1. Combine the info from the PNA text files and pdf file
-* Read the binary files containing the info on individuals in the text files (textfileNames.ser) and pdf file (pdfNames.ser)
+* Read the binary files containing the info on individuals in the text files (textfileNames.bin) and pdf file (pdfNames.bin)
    	* save the data to a treemap called 'names'
 * From our lists, add the SAA documents to the documents of kings
 	* _../Lists/KingsSaao_ is a list extracted from the Oracc SAAo project metadata (subprojects 1, 4, 5, 17, 18, 19, 21). If the king, during whose reign a letter is written, is mentioned in the metadata as the sender or recipient of the letter, he is connected to this document.

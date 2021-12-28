@@ -16,6 +16,8 @@ There are three different versions of the network, two one-mode networks and a t
 
 The files 'pairs' and 'pairsWeighted' can also each be used to create the one-mode networks. The weights have been counted as in connections.csv and connectionsWeighted.csv respectively. These files can be used, for example, in Gephi, but they do not contain the node attributes.
 
+For the reasons of copyright, we are not able to publish the data from which the networks have been extracted. But we hope that by publishing all the source codes, concordance lists, and outputs with explanations we give the user a picture of how the networks were created.
+
 #### A short explanation of the workflow:
 * Getting document names from the PNA text files provided by Simo Parpola (Editor in Chief of PNA)
 	* the document names are indicated with '@@' 

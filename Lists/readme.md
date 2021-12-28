@@ -95,4 +95,4 @@ timeperiods
 * +668-600 Assurbanipal and/or later
 * 1 7th century probably reign of Assurbanipal or later
 * If the dating of an individual is the second line (without the number (= frequency)), use the first line as the person's Time attribute in the network
-***Tero: tämän timeperiods-tiedoston alusta voisi poistaa suomenkielisen kommenttirivin***
+

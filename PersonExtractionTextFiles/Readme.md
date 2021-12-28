@@ -21,7 +21,7 @@ more information
 
 <<Name of the scholar who wrote the PNA entry
 ```
-##### THE WORKFLOW for finding individuals in the text files
+#### THE WORKFLOW for finding individuals in the text files:
 
 Further details can be found in the commented code in src/PNANameExtractor.java.
 

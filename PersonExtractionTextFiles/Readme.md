@@ -16,7 +16,7 @@ Information on the individual
 more information
 @@Document name (year);
 	- This can go on for several paragraphs and be divided into a numbered list 
-	which might be divided into a list marked with letters, etc. (e.g., a. bla bla 1.' bla bla a.' bla bla)
+	which might be divided into a list marked with letters, etc. (e.g., a., then 1'., and even a'.)
 	- Can have duplicate names indicated by '=', e.g. @@89-4-26,209:13 = Streck (1916) 288 no. 13.
 
 <<Name of the scholar who wrote the PNA entry

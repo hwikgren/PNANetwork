@@ -50,13 +50,11 @@ Further details can be found in the commented code in src/PNANameExtractor.java.
 2. Remove individuals without any valid documents
 	 
 3. Save information
-* Save a list of individuals with their information and names of the documents they appear in into a binary file called textFileNames.ser
+* Save a list of individuals with their information and names of the documents they appear in into a binary file called textFileNames.bin
 * Write individuals with all their information to the file _..Output/individualsInTextfiles_
 
 **PNANameExtractor.java takes as input the folder where the text files are**
-* Assumes a binary file with the name texts.ser
+* Uses a binary file with the name docs.bin
 	* contains the document names with the line they were found in using PNATextExtractor.java
-	* the file should be in the folder where the PNANameExtractor.java is started from
-		* can here be found in folder _../DocumentNameExtraction/_
-* Assumes a file called Lists/letterConversion
-	* NANameExtractor.java should be started from the folder where the Lists folder is
+	* the file assumes the same kind of treemap as is used in the scripts
+* Uses a file called Lists/letterConversion

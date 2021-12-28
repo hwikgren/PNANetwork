@@ -5,6 +5,8 @@ The networks were created from the text and pdf file versions of the <i>Prosopog
 
 <b>In order to study and visualise the networks, it is sufficiant to download the file Networks.zip.</b> The other files in this repository contain more indepth explanations of the procedure of creating the networks, the normalisation lists used for that, and the output of different stages of the procedure.
 
+For the reasons of copyright, we are not able to publish the data from which the networks have been extracted. But we hope that by publishing all the source codes, concordance lists, and outputs with explanations we give the user a picture of how the networks were created.
+
 ### Contents of the repository
 
 <b>DocumentNameExtraction</b>: The document name extraction from the text files

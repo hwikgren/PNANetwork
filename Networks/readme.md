@@ -6,7 +6,7 @@ The files in this folder are sufficiant to study and visualise the networks. The
 
 There are three different versions of the network, two one-mode networks and a two-mode network.
 
-* The names.csv files contains the names of all the individuals in the network and some metadata extracted from PNA (e.g. language of a name, date, profession, ethnicity, and place). This file can be used both with connections.csv and connectionsWeighted.csv to form a network.
+* The <b>names.csv</b> file contains the names of all the individuals in the network and some metadata extracted from PNA (e.g. language of a name, date, profession, ethnic origin, and place). This file can be used both with connections.csv and connectionsWeighted.csv to form a network. The attributes Start date and End date can be used in Gephi for enabling the Timeline feature.
 
 * Using <b>names.csv and connections.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The weight of an edge equals the number of times two persons co-occur in different documents.
 

@@ -1,4 +1,4 @@
-### Find individuals and documents in the pdf file
+### Finding individuals and documents in the pdf file
 
 For further details of the procedure, see the commented code in src/PNAPdfNameExtractor.java.
 
@@ -13,7 +13,7 @@ short description/profession (dating): longer description with document names in
       	- may have subcategories listing different types of activities/documents of the individual (e.g. a, then 1', and even a')
 <<the name of the scholar who wrote the PNA entry>>.
 ```
-##### THE WORKFLOW of extracting individuals and document names in the converted file:
+#### THE WORKFLOW of extracting individuals and document names in the converted file:
 
 1. Create a "database" of all known document names in the PNA text files, including the ones in the concordance lists
 * Read _../Output/docsInTextfiles_ and _../Output/allDuplicates_

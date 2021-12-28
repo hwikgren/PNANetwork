@@ -65,7 +65,7 @@ short description/profession (dating): longer description with document names in
 					snippet have been iterated over
 			* Continue from the following word
 3. Save the information 
-* Write a treemap with individuals and their info + names of the documents they appear in to a binary file called pdfNames.ser
+* Write a treemap with individuals and their info + names of the documents they appear in to a binary file called pdfNames.bin
 * Write a list of individuals with their info + names of the documents they appear in to a file called _..Output/individualsInPdffile_
 
 The script uses 
@@ -77,4 +77,3 @@ The script uses
      * allDuplicates
 
 There is an option of writing only the document names found in the pdf file to the file _../Output/docsInPdffile_
-* the file can be found in this folder

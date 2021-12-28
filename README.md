@@ -37,7 +37,7 @@ For the reasons of copyright, we are not able to publish the data from which the
   * The documents in which an individual is mentioned were extracted by using the "original line - standardized name" conversion list produced in the previous step
   * <b>See the folder PersonExtractionTextFiles for more details</b>
 * Finding names and other info of individuals in the text file extracted from PNA_3_2.pdf
-	* As preprocessing the pdf-file was copied to Word and then turned into a text file and semimanually curated
+	* As preprocessing, the pdf-file was copied to Word and then turned into a text file and semimanually curated
 		* Names of individuals that in the pdf-file were marked with bold, were in Word marked with '\*'
 		* Mistakes caused by copying from two-columns to one were corrected by hand
 	* Individuals with the same name have been numbered and now names were indicated with '\*' before them 

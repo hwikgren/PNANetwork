@@ -18,3 +18,7 @@
 <b>textsWithOriginals</b>: a list of normalized text names and the original data (a full line) in the PNA text files
 * this information is also saved in the binary file texts.ser and used in PNANameExtractor.java
 
+<b>thumbprints</b>: Thumbprints made in PNATextExtractor.java for all the documents where it was clear where the document name ended and line number started. Before trying to find document names in running unstructured texts PNAPdfNameExtractor.java made similar thumbprints for all the document names found in the text files and in corcordance lists.
+
+<b>usedDuplicates</b>: The actual duplicates that were used for instead of the document name found in the text files. 
+

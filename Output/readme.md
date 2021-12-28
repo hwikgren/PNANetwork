@@ -8,6 +8,8 @@
 
 <b>allNamesWithDocs</b>: a list of all individuals (in the text files and pdf file) with their raw PNA metadata and the documents they are mentioned in
 
+<b>docsInPdfFile</b>: the final normalized names of documents found in the PNA pdf file
+
 <b>docsInTextfiles</b>: the final normalized names of documents found in the PNA text files
 * used in PNAPdfNameExtractor.java
 

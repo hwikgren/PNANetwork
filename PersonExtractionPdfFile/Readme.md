@@ -20,10 +20,11 @@ short description/profession (dating): longer description with document names in
 		* Record the length of the longest variant
 	* Duplicates are also added to a treemap called 'duplicates'
 	* A thumbprint is made of all document names and added to the list of thumbprints
-	  * Thumbprints are made by replacing numbers with 1 and spaces with _ ***Tero: thumbprinteissä näkyi myös isoja ja pieniä x-kirjaimia. Korvaavatko ne aakkosia, jotka liitetään numerosarjan perään?***
+	  * Thumbprints are made by replacing numbers with 1 and spaces with _ 
+	  	* trailing letters are replaced with x and +-signs with X
 	  * Eg., SAA 14 123 > SAA_11_111
 * Read the Radner (forthcoming) conversion list to MAss names (_../Lists/Mass_Radner_conversion_)
-  * The names are added to a treemap called 'MAss'
+	* The names are added to a treemap called 'MAss'
 2. Iterate through the text file converted from pdf
 * Get a name from a line starting with '*'
 	* Convert letters from ASCII to Unicode according to our list (_../Lists/letterConversion_)
@@ -67,11 +68,11 @@ short description/profession (dating): longer description with document names in
 * Write a treemap with individuals and their info + names of the documents they appear in to a binary file called pdfNames.ser
 * Write a list of individuals with their info + names of the documents they appear in to a file called _..Output/individualsInPdffile_
 
-The script assumes 
-* a folder called Lists with the following files:
+The script uses 
+* Following files in the folder ../Lists:
      * letterConversion
      * MAss_Radner_conversion
-* a folder called Output with the following files produced with PNATextExtractor.java and PNANameExtractor.java:
+* Following files in the folder called Output:
      * docsInTextfiles
      * allDuplicates
      * ***Tero: eikö PNATextExtractor.java tuota nämä molemmat? Puuttuuko listalta jokin PNANameExtractor.javan tuottama tiedosto?***

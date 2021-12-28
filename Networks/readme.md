@@ -16,7 +16,7 @@ There are three different versions of the network, two one-mode networks and a t
 
 The files 'pairs' and 'pairsWeighted' can also each be used to create the one-mode networks. The weights have been counted as in connections.csv and connectionsWeighted.csv respectively. These files can be used, for example, in Gephi, but they do not contain the node attributes.
 
-### A short explanation of the workflow
+#### A short explanation of the workflow:
 * Getting document names from the PNA text files provided by Simo Parpola (Editor in Chief of PNA)
 	* the document names are indicated with '@@' 
   * Various lists of concordances to standardize the document names were used
@@ -28,12 +28,12 @@ The files 'pairs' and 'pairsWeighted' can also each be used to create the one-mo
 	* The general description and dating of each individual as well as the language and gender of the name were also extracted
   * The documents in which an individual is mentioned were extracted by using the "original line - standardized name" conversion list produced in the previous step
 * Finding names and other info of individuals in the text file extracted from PNA_3_2.pdf
-	* As preprocessing the pdf-file was copied to Word and then turned into a text file and semimanually curated
+	* As preprocessing, the pdf-file was copied to Word and then turned into a text file and semimanually curated
 		* Names of individuals that in the pdf-file were marked with bold, were in Word marked with '\*'
 		* Mistakes caused by copying from two-columns to one were corrected by hand
 	* Individuals with the same name have been numbered and now names were indicated with '\*' before them 
 		* Individuals are given the number used in PNA or 1 if only one individual has the specific name
-		* The number is added to the name with underscore as in the previous step
+		* The number is added to the name with underscore
 	* The general description and dating of each individual as well as the language and gender of the name were also extracted 
 	* Document names were found in the unstructured running text by using the list of document names in the text files + concordance lists
 * Building a two-mode network of individuals and the documents they are attested in and a one-mode co-occurrence network of people attested in the same document

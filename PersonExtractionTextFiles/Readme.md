@@ -21,7 +21,7 @@ more information
 
 <<Name of the scholar who wrote the PNA entry
 ```
-#### The procedure for finding individuals in the text files
+#### THE WORKFLOW for finding individuals in the text files
 
 Further details can be found in the commented code in src/PNANameExtractor.java.
 
@@ -46,6 +46,7 @@ Further details can be found in the commented code in src/PNANameExtractor.java.
 	* If a line starts with '@@'
 		* get the document name corresponding to the line from the list produced with PNATextExtractor.java and imported in texts.ser
 		* add the document name to the documents of the individual
+	* There may subcategories listing different types of activities/documents of the individual (e.g. a, then 1', and even a')
 
 2. Remove individuals without any valid documents
 	 

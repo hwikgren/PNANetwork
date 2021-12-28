@@ -10,8 +10,10 @@ An example of the text file extracted from the pdf file can be seen in pdfAsText
 *name (translation of the name); language of the name; gender of the name; wr. transliteration.
 short description/profession (dating): longer description with document names in running text
       - Can start with a number (e.g., 3.), if there are several individuals with the same name 
+      	- may have subcategories listing different types of activities/documents of the individual (e.g. a, then 1', and even a')
 <<the name of the scholar who wrote the PNA entry>>.
 ```
+THE WORKFLOW:
 
 1. Create a "database" of all known document names in the PNA text files, including the ones in the concordance lists
 * Read _../Output/docsInTextfiles_ and _../Output/allDuplicates_

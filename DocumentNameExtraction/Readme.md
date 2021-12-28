@@ -1,4 +1,28 @@
-### How our script extracts document names from the text file versions of PNA
+# Finding document names in the text files
+
+The format of the text files is:
+```
+*Name
+(translation of the name); language of the name; gender;
+information on the name (can span several lines)
+
+Profession (time period when lived): 
+	- Line starts with a number if there are several individuals with the same name, otherwise not
+		e.g., 3. Priest of Ninurta, in Kalhu:
+	- Can span several lines
+Information on the individual     
+	- Can span several lines
+@@Document name (year);
+more information
+@@Document name (year);
+	- This can go on for several paragraphs and be divided into a numbered list 
+	which might be divided into a list marked with letters, etc. (e.g., a., then 1'., and even a'.)
+	- Can have duplicate names indicated by '=', e.g. @@89-4-26,209:13 = Streck (1916) 288 no. 13.
+
+<<Name of the scholar who wrote the PNA entry
+```
+
+### THE WORKFLOW of extracting document names from the tex files
 
 Further details can be found in the commented code in src/PNATextExtractor.java. See textfileExample.txt for a small extract from a text file.
 

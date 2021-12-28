@@ -33,27 +33,34 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 		* in order to alleviate the impact of false connections between people who had nothing to do with each other but just happened to be mentioned in the same text (e.g., a long list of names), the weight can be calculated by giving less weight to connections found in documents with many people:
 			* dividing 1 by the number of individuals in the document -1 \[1/(n-1)]
 	* If the same pair appears in another document, sum up the weights
-	* For each name in the pairs
-		* Get a Profession attribute for the individuals from our list _../Lists/knownProffs_
+	* Once for each name in the pairs, normalise the metadata that was extracted from PNA by rules (for cleaning) and by comparing to our lists
+		* Get the NameLanguage attribute for the individual
+			* Clean the language extracted from PNA
+			* Find the normalised language of the name from our list _../Lists/languages_
+		* Get the Gender attribute 
+			* by cleaning, only masc, fem and masc/fem are accepted
+		* Get the Time attribute
+			* Correct obvious mistakes in the dating in PNA (e.g., latereign > late reign, probab-ably > probably, etc.)
+			* Standardize the dating in PNA (e.g., eighth > 8th, Sargon II > reign of Sargon II, etc.)
+			* Find the normalized dating in our list _../Lists/timeperiods_
+			* From the normalised dating, get the year and set start (January 1 of the year) and end date (December 31 of the year)
+				* the StartYear and EndYear attributes can be used for enabling the timeline feature in Gephi
+					* Merge Columns; select EndYear > ; StartYear >; select Create time interval; OK; select Parse date; date format: dd/mm/yyyy ; OK
+		* Get a Profession attribute 
+			* Find the normalised profession corresponding to the description from our list _../Lists/knownProffs_
 			* The list has been compiled using Lists/professionCategory and semi-automatically assigning the raw PNA descriptions to the category that contains similar descriptions
-		* Get the Ethnicity attribute for the individuals
-			* If the raw PNA description is in our list of ethnicities (_../Lists/origins_)
-				* use the Ethnicity category there
-			* Else, individuals get 'Unknown' as the Ethnicity attribute
-		* Get the Place attribute for the individuals
+		* Get the Place attribute
 			* Find possible names of places from the raw PNA descriptions (e.g., starts with a capital letter after 'of'/'from'/'in'/'active in'/'mayor of', etc.)
 				* If that place name is in our list of real places (and their normalizations), i.e. _../Lists/places_
 					* use it
 				* Else, use the first word in the description which is in our list of real places if any
-				* Else, individuals get 'Unknown' as the Place attribute
-		* Get the Time attribute for the individuals
-			* Correct obvious mistakes in the dating in PNA (e.g., latereign > late reign, probab-ably > probably, etc.)
-			* Standardize the dating in PNA (e.g., eighth > 8th, Sargon II > reign of Sargon II, etc.)
-			* Find the normalized dating in our list of time periods (_../Lists/timeperiods_)
-				* use that for the Time attribute of the individual
-		* ***Tero: miten NameOrigin- ja Gender-tiedot tulevat csv-tiedostoon?***
+				* Else, the individual gest 'Unknown' as the Place attribute 
+		* Get the Origin attribute
+			* If the raw PNA description is in our list of ethnic origins (_../Lists/origins_)
+				* use the origin category there
+			* Else, the individual gets 'Unknown' as the ethnic origin
 		* Give an id number for each individual and save that in a treemap called 'nodes'
-		* Write the information on each individual to a file called 'names.csv'
+		* Write the information on the individual to a file called 'names.csv'
 	* For each pair of individuals found together at least in one document
 		* Get the id number of both individuals from the 'nodes' treemap
 		* Write the id numbers of both individuals + the summed weight of their connections to a file called connections.csv (the weight equals the number of co-occurrences or weighted co-occurrences, depending on what was chosen above)
@@ -67,11 +74,11 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 * Optionally, make a simple csv file of document-individual pairs (biModal.csv)
 
 
-The script PNACreateNetwork.java assumes
-* the following files in the folder where the script is started from:
-	* textfileNames.ser
-	* pdfNames.ser
-* the following files in the folder Lists:
+The script PNACreateNetwork.java uses
+* the following files:
+	* textfileNames.bin produced with PNANameExtractor.java (see folder ../PersonExtractionTextFiles)
+	* pdfNames.bin produced with PNAPdfNameExtractor.java (see folder ../PersonExtractionPdfFile)
+* the following files in the folder ../Lists:
 	* KingsSaao
 	* SAAKings
 	* letterConversion

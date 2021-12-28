@@ -1,4 +1,4 @@
-# Finding document names in the text files
+### Finding document names in the text files
 
 The format of the text files is:
 ```
@@ -22,7 +22,7 @@ more information
 <<Name of the scholar who wrote the PNA entry
 ```
 
-### THE WORKFLOW of extracting document names from the tex files
+#### THE WORKFLOW of extracting document names from the text files:
 
 Further details can be found in the commented code in src/PNATextExtractor.java. See textfileExample.txt for a small extract from a text file.
 

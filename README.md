@@ -42,7 +42,7 @@ For the reasons of copyright, we are not able to publish the data from which the
 		* Mistakes caused by copying from two-columns to one were corrected by hand
 	* Individuals with the same name have been numbered and now names were indicated with '\*' before them 
 		* Individuals are given the number used in PNA or 1 if only one individual has the specific name
-		* The number is added to the name with underscore as in the previous step
+		* The number is added to the name with underscore
 	* The general description and dating of each individual as well as the language and gender of the name were also extracted 
 	* Document names were found in the unstructured running text by using the list of document names in the text files + concordance lists
 	* <b>See the folder PersonExtractionPdfFile for more details</b>

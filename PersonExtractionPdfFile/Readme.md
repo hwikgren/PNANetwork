@@ -5,7 +5,7 @@ For further details of the procedure, see the commented code in src/PNAPdfNameEx
 The last volume of PNA (3/II) was not available to us as a text file. The individuals and the documents they appear in have been extracted from a text file converted from a pdf file of the volume.
 * For the details of extracting the text from the pdf file, see the file pdfTextExtraction.txt.
 
-The form of the text file transformed from the pdf file:
+An example of the text file extracted from the pdf file can be seen in pdfAsText_example. The form of the text file is:
 ```
 *name (translation of the name); language of the name; gender of the name; wr. transliteration.
 short description/profession (dating): longer description with document names in running text

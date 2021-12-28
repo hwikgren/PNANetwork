@@ -1,14 +1,14 @@
 ### Network Creation
 
-There are three different versions of the network, two one-mode networks and a two-mode network.
+There are three different versions of the network, two one-mode networks and a two-mode network. The csv files can be found in the folder _../Networks_.
 
 Using <b>names.csv and connections.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The weight of an edge equals the number of times two persons co-occur in different documents.
 
 Using <b>names.csv and connectionsWeighted.csv</b> one can create a one-mode co-occurence network of persons attested in PNA. The edge weights in this network have been calculated as follows. For each document in which two persons co-occur, subtract 1 from the total number of persons attested in the document and divide 1 by the difference \[1/(n-1)]. To calculate the edge weight, add up the weights in all the documents.
 
-Using <b>bimodal.csv</b> one can create a two-mode network of documents and the individuals appearing in them.
+Using <b>bimodal.csv</b> one can create a two-mode network of documents and the individuals appearing in them. Unlike names.csv this file does not not contain the node attributes.
 
-The files 'pairs' and 'pairsWeighted' in the Output folder can also be used to create the one-mode networks. Those can be used in Gephi, but they do not contain the node attributes. A line with Source;Target;Weight has to be added to the beginning of the files in order to use them in Gephi.
+The files 'pairs' and 'pairsWeighted' can also each be used to create the one-mode networks. These files are also in the folder _../Networks_. The weights have been counted as in connections.csv and connectionsWeighted.csv respectively. These files can be used, for example, in Gephi, but they do not contain the node attributes.
 
 #### How our script creates the network data and writes csv files
 
@@ -69,9 +69,9 @@ Further details can be found in the commented code in src/PNACreateNetwork.java.
 * Write the names of individuals, their raw PNA data, and the names of the documents they appear in to the file Output/allNamesWithDocs
 * Write all documents with at least 2 individuals and the names of the persons to Output/allDocsWithIndividuals
 * Write the pairs of people who appear in the same documents
-	* with an edge weight that equals the number of their co-occurrences (Output/pairs)
-	* with edge weights that take the number of persons in a document into account (Output/pairsWeighted)
-* Optionally, make a simple csv file of document-individual pairs (biModal.csv)
+	* with an edge weight that equals the number of their co-occurrences (Networks/pairs)
+	* with edge weights that take the number of persons in a document into account (Networks/pairsWeighted)
+* Optionally, make a simple csv file of document-individual pairs (Networks/biModal.csv)
 
 
 The script PNACreateNetwork.java uses

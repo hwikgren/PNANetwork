@@ -69,13 +69,12 @@ short description/profession (dating): longer description with document names in
 * Write a list of individuals with their info + names of the documents they appear in to a file called _..Output/individualsInPdffile_
 
 The script uses 
-* Following files in the folder ../Lists:
+* following files in the folder ../Lists:
      * letterConversion
      * MAss_Radner_conversion
-* Following files in the folder called Output:
+* following files in the folder called ../Output:
      * docsInTextfiles
      * allDuplicates
-     * ***Tero: eikö PNATextExtractor.java tuota nämä molemmat? Puuttuuko listalta jokin PNANameExtractor.javan tuottama tiedosto?***
 
 There is an option of writing only the document names found in the pdf file to the file _../Output/docsInPdffile_
 * the file can be found in this folder

@@ -54,8 +54,9 @@ origins
 * 1 Sheikh of the Naqiru tribe son of
 * If the description of an individual is the second line (without the number (= frequency)), use the first line as the person's Ethnicity attribute in the network
 
-pdfAsText
-***Tero: tämä tiedosto pitänee poistaa tekijänoikeussyistä. Toimisiko tämänkin kohdalla se, että otetaan siitä lyhyt pätkä esimerkiksi?***
+pdfAsText_example
+* An extract from the PNA_3_2.pdf when turned into text file
+* For an explanation on how the file was created see _../../PersonExtractionPdfFile/pdfTextExtraction.txt_
 
 personMetadata
 * List and explanation of metadata categories (attributes) given to each person in the network

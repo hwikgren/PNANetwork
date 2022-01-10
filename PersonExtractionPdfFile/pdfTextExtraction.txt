@@ -15,3 +15,9 @@ EXTRACTING TEXT FROM THE PDF FILE (PNA 3/II)
 This process took a lot of manual work, and small corrections to the text file have been made many times!
 
 Cannot be reproduced!
+
+Before using the file to create our final network, we changed the using 
+```
+sed 's/š/š/g' names.csv | sed 's/Š/Š/g' | sed 's/î/î/g' | sed 's/â/â/g' | sed 's/ê/ê/g' | sed 's/û/û/g'
+```
+

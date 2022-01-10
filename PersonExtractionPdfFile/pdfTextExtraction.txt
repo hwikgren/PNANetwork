@@ -16,8 +16,8 @@ This process took a lot of manual work, and small corrections to the text file h
 
 Cannot be reproduced!
 
-Before using the file to create our final network, we changed the using 
-```
+Before using the file to create our final network, we changed letters that were different from the ones extracted from the text files.
+We used the following command:
 sed 's/š/š/g' names.csv | sed 's/Š/Š/g' | sed 's/î/î/g' | sed 's/â/â/g' | sed 's/ê/ê/g' | sed 's/û/û/g'
-```
+
 

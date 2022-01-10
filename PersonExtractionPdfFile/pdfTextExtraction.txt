@@ -17,7 +17,8 @@ This process took a lot of manual work, and small corrections to the text file h
 Cannot be reproduced!
 
 Before using the file to create our final network, we changed letters that were different from the ones extracted from the text files.
+Since the use of long vowel markers was not consistent, we replaced all with ones without markes.
 We used the following command:
-sed 's/š/š/g' names.csv | sed 's/Š/Š/g' | sed 's/î/î/g' | sed 's/â/â/g' | sed 's/ê/ê/g' | sed 's/û/û/g'
+sed 's/š/š/g' names.csv | sed 's/Š/Š/g' | sed 's/î/i/g' | sed 's/â/a/g' | sed 's/ê/e/g' | sed 's/û/u/g'
 
 

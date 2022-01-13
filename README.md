@@ -3,7 +3,7 @@ The data used for creating "A Social Network of the <i>Prosopography of the Neo-
 
 The networks were created from the text and pdf file versions of the <i>Prosopography of the Neo-Assyrian Empire</i> (PNA). There are two different networks created from the same data. In the two-mode network, persons are connected to the texts in which they are attested. The one-mode network connects two persons if they are attested in the same document. A short explanation of the procedure of creating the networks is below.
 
-<b>In order to study and visualise the networks, it is sufficiant to download the file Networks.zip.</b> The other files in this repository contain more indepth explanations of the procedure of creating the networks, the normalisation lists used for that, and the output of different stages of the procedure.
+<b>In order to study and visualize the networks, it is sufficiant to download the file Networks.zip.</b> The other files in this repository contain more indepth explanations of the procedure of creating the networks, the normalization lists used for that, and the output of different stages of the procedure.
 
 For the reasons of copyright, we are not able to publish the data from which the networks have been extracted. But we hope that by publishing all the source codes, concordance lists, and outputs with explanations we give the user a picture of how the networks were created.
 
@@ -13,7 +13,7 @@ For the reasons of copyright, we are not able to publish the data from which the
 
 <b>Lists</b>: Various lists used for extracting the names of documents and individuals and for creating the network
 
-<b>Networks</b>: The networks as csv- and gexf-files that can be used for studying and visualising the networks
+<b>Networks</b>: The networks as csv and gexf files that can be used for studying and visualizing the networks
 
 <b>NetworkCreation</b>: The creation of the networks and writing csv files
 
@@ -47,7 +47,7 @@ For the reasons of copyright, we are not able to publish the data from which the
 	* Document names were found in the unstructured running text by using the list of document names in the text files + concordance lists
 	* <b>See the folder PersonExtractionPdfFile for more details</b>
 * Building a two-mode network of individuals and the documents they are attested in and a one-mode co-occurrence network of people attested in the same document
-	* For the one-mode network, shorter/standardized versions of the language of a name, date, profession, ethnicity, and place were produced using various normalisation lists (see folder Lists)
+	* For the one-mode network, shorter/standardized versions of the language of a name, date, profession, ethnicity, and place were produced using various normalization lists (see folder Lists)
 	* Writing csv files (a = two-mode network, b and c together form the one-mode network)
 		1. of individuals and the documents they are attested in
 		2. of individuals with their metadata

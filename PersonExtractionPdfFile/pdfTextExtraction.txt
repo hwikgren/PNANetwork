@@ -16,8 +16,9 @@ This process took a lot of manual work, and small corrections to the text file h
 
 Cannot be reproduced!
 
-Before using the file to create our final network, we changed letters that were different from the ones extracted from the text files.
-Since the use of long vowel markers was not consistent, we replaced all with ones without markes.
+Before using the file to create our final network, we had to handle with some issues that were caused by the conversion from the pdf file to a text file.
+First, the š and Š signs consisted of two different elements in the converted text file. We replaced them with the standard Unicode signs for š and Š.
+Second, the macrons used to indicate long vowels in Akkadian (ā, ē, ī, ū) could not be retained in the conversion from the pdf file to a text file. For consistency, we also removed circumflexes from personal names (â, ê, î, û -> a, e, i, u). Accordingly, all the vowels in the personal names from PNA 3/II are short in our networks.
 We used the following command:
 sed 's/š/š/g' names.csv | sed 's/Š/Š/g' | sed 's/î/i/g' | sed 's/â/a/g' | sed 's/ê/e/g' | sed 's/û/u/g'
 

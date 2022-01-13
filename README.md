@@ -19,9 +19,9 @@ For the reasons of copyright, we are not able to publish the data from which the
 
 <b>Output</b>: Lists produced during the various stages of creating the network
 
-<b>PersonExtractionPdfFile</b>: The process of finding names and documents in the pdf file
+<b>PersonExtractionPdfFile</b>: The process of finding individuals and documents in the pdf file
 
-<b>PersonExtractionTextFiles</b>: The process of finding names and documents in the text files
+<b>PersonExtractionTextFiles</b>: The process of finding individuals and documents in the text files
 
 ### A short explanation of the workflow
 * Getting document names from the PNA text files provided by Simo Parpola (Editor in Chief of PNA)

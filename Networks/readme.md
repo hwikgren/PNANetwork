@@ -2,7 +2,7 @@
 
 The networks were created from the text and pdf file versions of the Prosopography of the Neo-Assyrian Empire (PNA). 
 
-The files in this folder are sufficiant to study and visualise the networks. The other files in our Zenodo repository contain more indepth explanations of the procedure of creating the networks, the normalisation lists used for that, and the output of different stages of the procedure. Below is a short explanation.
+The files in this folder are sufficiant to study and visualize the networks. The other files in our Zenodo repository contain more indepth explanations of the procedure of creating the networks, the normalization lists used for that, and the output of different stages of the procedure. Below is a short explanation.
 
 There are three different versions of the network, two one-mode networks and a two-mode network.
 
@@ -39,7 +39,7 @@ For the reasons of copyright, we are not able to publish the data from which the
 	* The general description and dating of each individual as well as the language and gender of the name were also extracted 
 	* Document names were found in the unstructured running text by using the list of document names in the text files + concordance lists
 * Building a two-mode network of individuals and the documents they are attested in and a one-mode co-occurrence network of people attested in the same document
-	* For the one-mode network, shorter/standardized versions of the language of a name, date, profession, ethnicity, and place were produced using various normalisation lists (see folder Lists)
+	* For the one-mode network, shorter/standardized versions of the language of a name, date, profession, ethnicity, and place were produced using various normalization lists (see folder Lists)
 	* Writing csv files (a = two-mode network, b and c together form the one-mode network)
 		1. of individuals and the documents they are attested in
 		2. of individuals with their metadata

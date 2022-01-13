@@ -13,9 +13,9 @@ For the reasons of copyright, we are not able to publish the data from which the
 
 <b>Lists</b>: Various lists used for extracting the names of documents and individuals and for creating the network
 
-<b>Networks</b>: The networks as csv and gexf files that can be used for studying and visualizing the networks
-
 <b>NetworkCreation</b>: The creation of the networks and writing csv files
+
+<b>Networks</b>: The networks as csv and gexf files that can be used for studying and visualizing the networks
 
 <b>Output</b>: Lists produced during the various stages of creating the network
 

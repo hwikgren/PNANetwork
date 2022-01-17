@@ -45,6 +45,12 @@ For the reasons of copyright, we are not able to publish the data from which the
 		2. of individuals with their metadata
 		3. of connections between the individuals in 2., the connections come from appearing in same documents
 
+### Dataset creators
+* Heidi Jauhiainen (University of Helsinki) was responsible for research design, data extraction and validation, dataset creation, and software development. 
+* Tero Alstola (University of Helsinki) was responsible for research design, validation, and Assyriological research. 
+* Saana Svärd (University of Helsinki) was responsible for conceptualization and funding acquisition. 
+* Krister Lindén (University of Helsinki) was responsible for conceptualization and methodology. 
+* Repekka Uotila (University of Helsinki) worked on normalization and reference lists.
 
 ### Acknowledgements
 

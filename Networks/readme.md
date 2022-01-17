@@ -14,7 +14,9 @@ There are three different versions of the network, two one-mode networks and a t
 
 * Using <b>bimodal.csv</b> one can create a two-mode network of documents and the individuals appearing in them. Unlike names.csv this file does not not contain the node attributes.
 
-The files <b>pairs</b> and <b>pairsWeighted</b> can also each be used to create the one-mode networks. The weights have been counted as in connections.csv and connectionsWeighted.csv, respectively. These files can be used, for example, in Gephi, but they do not contain the node attributes.
+The files <b>pairs.csv</b> and <b>pairsWeighted.csv</b> can also each be used to create the one-mode networks. The weights have been counted as in connections.csv and connectionsWeighted.csv, respectively. These files can be used, for example, in Gephi, but they do not contain the node attributes.
+
+There are also gexf-files of the network versions which have been layouted with Gephi: <b>network.gexf</b>, <b>networkWeighted.gexf</b>, and <b>networkBiModal.gexf</b>. These can also be opened in Gephi.
 
 For the reasons of copyright, we are not able to publish the data from which the networks have been extracted. But we hope that by publishing all the source codes, concordance lists, and outputs with explanations we give the user a picture of how the networks were created.
 

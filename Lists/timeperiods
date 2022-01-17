@@ -1,5 +1,3 @@
-##Tehty "timePeriods"-listan pohjalta. "+" merkitsee otsikkoa, jonka alle seuraavat rivit yhdistetään.
-
 +N/A: mistakes, empty, or unknown
    1 DUMU
    1 EN-KASKAL
@@ -41,6 +39,7 @@
    1 Old Assyrian Period
    1 Old Assyrian period
    1 reign of Aššur-nerari IV
+   1 reign of Assur-nerari IV
    1 2nd millennium BC
 +899-700 9th or 8th century
    2 9th century
@@ -137,13 +136,16 @@
    2 probably reign of Shalmaneser III or `am@i-Adad V
    4 reign of Shalmaneser III or `am@i-Adad V
    4 reign of Shalmaneser III or Šamši-Adad V
+   1 reign of Shalmaneser III or Šamši-Adad V
    1 reign of Shalmaneser III and `am@i-Adad V
    1 reign of Shalmaneser III and Šamši-Adad V
+   1 reign of Shalmaneser III and Šamši-Adad V
    1 823-821
 +823-811 Šamši-Adad V
    1 c. 818 to 813
   12 reign of `am@i-Adad V
    2 reign of Šamši-Adad V
+   1 reign of Šamši-Adad V
 +823-783 Šamši-Adad V and/or Adad-nerari III
    1 reign of `am@i-Adad V and Adad-nerari III
    1 and possibly reign of `am@i-Adad V or Adad-nerari III
@@ -192,6 +194,7 @@
   58 reign of Assur-nerari V
    4 reign of Aššur-nerari V
    1 reign of Aššur-nera-ri V
+   1 reign of Assur-nera-ri V
 +754-727 Assur-nerari V and/or Tiglath-pileser III
    2 reign of Assur-nerari V and Tiglath-pileser III
    4 reign of Assur-nerari V or Tiglath-pileser III
@@ -426,3 +429,5 @@
    1 probably reign of Sin-@arru-i@kun
   12 reign of Sin-@arru-i@kun
    1 probably reign of Sin-šarru-iškun
+   1 probably reign of Sin-šarru-iškun
+   1 after reign of Assur-etel-ilani 

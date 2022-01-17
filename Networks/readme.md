@@ -2,7 +2,7 @@
 
 The networks were created from the text and pdf file versions of the Prosopography of the Neo-Assyrian Empire (PNA). 
 
-The files in this folder are sufficiant to study and visualize the networks. The other files in our Zenodo repository contain more indepth explanations of the procedure of creating the networks, the normalization lists used for that, and the output of different stages of the procedure. Below is a short explanation.
+The files in this folder are sufficient to study and visualize the networks. The other files in our Zenodo repository contain more indepth explanations of the procedure of creating the networks, the normalization lists used for that, and the output of different stages of the procedure. Below is a short explanation.
 
 There are three different versions of the network, two one-mode networks and a two-mode network.
 

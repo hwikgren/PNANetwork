@@ -18,6 +18,8 @@ The files <b>pairs.csv</b> and <b>pairsWeighted.csv</b> can also each be used to
 
 There are also gexf-files of the network versions which have been layouted with Gephi: <b>network.gexf</b>, <b>networkWeighted.gexf</b>, and <b>networkBiModal.gexf</b>. These can also be opened in Gephi. All these layouted networks can also be found in the Gephi-project <b>PNANetworks.gephi</b>.
 
+Gephi is an open-source free visualisation tool, that can be downloaded here: https://gephi.org.
+
 For the reasons of copyright, we are not able to publish the data from which the networks have been extracted. But we hope that by publishing all the source codes, concordance lists, and outputs with explanations we give the user a picture of how the networks were created.
 
 #### A short explanation of the workflow:
